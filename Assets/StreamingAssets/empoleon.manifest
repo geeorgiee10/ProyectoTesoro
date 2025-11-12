@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.2.6f1
+CRC: 930433053
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 53bc89c46221616b8af2b5daf4c43c7e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 756c782b9b6ee152b0d33e7b9fa049d2
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 48eb0a99588e0d1ac6d8e3fa88a0c57e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/empoleon.prefab
+Dependencies: []
