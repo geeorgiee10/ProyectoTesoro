@@ -1,0 +1,6 @@
+{
+	"nombre": "Vengadores",
+	"url": "https://drive.google.com/uc?export=download&id=1s1YizNNeML0085mtRNI0O2PTR4pzqs3p",
+	"adivinanza": "En un castillo con magia y hechicería,
+	un niño con cicatriz enfrenta su destino cada día"
+}

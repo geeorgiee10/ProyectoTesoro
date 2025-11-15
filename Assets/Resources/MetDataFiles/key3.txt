@@ -1,0 +1,6 @@
+{
+	"nombre": "El Señor de los Anillos",
+	"url": "https://drive.google.com/uc?export=download&id=1fUxYRaVNcnAUZmqAzYs1PWECqV3P71S4",
+	"adivinanza": "En una galaxia muy, muy lejana,
+	caballeros usan sables de luz y luchan contra el lado oscuro"
+}

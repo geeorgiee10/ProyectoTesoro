@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 1024158347}
   - component: {fileID: 1024158346}
   - component: {fileID: 1024158345}
-  - component: {fileID: 1024158344}
+  - component: {fileID: 1024158348}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -417,25 +417,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1024158344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024158343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1024158346}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: 
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1024158346}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1024158345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,7 +487,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1024158344}
+  mPreview: {fileID: 1024158348}
 --- !u!4 &1024158347
 Transform:
   m_ObjectHideFlags: 0
@@ -522,6 +503,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024158348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024158343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1024158346}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: 
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1024158346}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1088718811
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,8 +937,8 @@ MonoBehaviour:
   RuntimeCollider: 0
   mTrackableName: 
   mInitializedInEditor: 1
-  AccessKey: 75187a0ba31e004257fd1627eb6ef63d73064bb3
-  SecretKey: a642bcc23172b2f8eee2cecf61565e269e485ab9
+  AccessKey: 14f381aada394fc11220e1905935022f3448318c
+  SecretKey: a86b6f383afe8358e4f8d25ec3a0413541708910
 --- !u!4 &1961969553
 Transform:
   m_ObjectHideFlags: 0
