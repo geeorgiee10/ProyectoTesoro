@@ -11,8 +11,8 @@ using System.IO;
 public class MetaDatos
 {
     public string nombre;
-    public string URL;
-    public string Puntuacion;
+    public string url;
+    public string adivinanza;
 
     public static MetaDatos CreateFromJSON(string jsonString)
     {
@@ -34,7 +34,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
     [SerializeField] TextMeshProUGUI m_Object;
     public ImageTargetBehaviour ImageTargetTemplate;
 
-    string[] pokemon = { "Bob Esponja" };
+    string[] pokemon = { "Star Wars" };
 
     public void GenerarPokes()
     {
@@ -120,12 +120,12 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         datos = MetaDatos.CreateFromJSON(cloudRecoSearchResult.MetaData);
 
-        StartCoroutine(GetAssetBundle(datos.URL));
+        StartCoroutine(GetAssetBundle(datos.url));
 
         // Store the target metadata
         mTargetMetadata = datos.nombre;
-        mTargetMetadataText = datos.Puntuacion;
-        mTargetMetadataURL = datos.URL;
+        mTargetMetadataText = datos.adivinanza;
+        mTargetMetadataURL = datos.url;
 
         if (mTargetMetadata == m_Object.text)
         {
@@ -151,7 +151,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         GUI.Box(new Rect(100, 100, 200, 50), mIsScanning ? "Scanning" : "Not scanning");
         // Display metadata of latest detected cloud-target
         GUI.Box(new Rect(100, 200, 200, 50), "Nombre: " + mTargetMetadata);
-        GUI.Box(new Rect(100, 300, 200, 50), "Puntuacion: " + mTargetMetadataText);
+        GUI.Box(new Rect(100, 300, 700, 100), "Adivinanza: " + mTargetMetadataText);
         GUI.Box(new Rect(100, 400, 700, 50), "URL: " + mTargetMetadataURL);
         GUI.Box(new Rect(100, 500, 700, 50), "Error: " + mTargetMetadataError);
         // If not scanning, show button
