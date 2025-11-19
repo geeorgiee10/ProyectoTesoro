@@ -820,7 +820,6 @@ struct ObservableList_1_tE0C5186A23705A53EADD6E85FBD7BE9C9976FFC6;
 struct ObservableList_1_tA2EE47FA1DF709EB5C98A99799E1701D66260C08;
 struct Predicate_1_t36D256048B03BCAFB2DE7C4C64408338FFC96AE4;
 struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
-struct Predicate_1_tEB15485FDAFC48C82EE54427A8DBDB401213706C;
 struct Predicate_1_t33210454BBD5525EDCF57579B4F30B5893B8C8EC;
 struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
 struct Predicate_1_t527F3726E9C26726FF0C4E80283E99998C975F91;
@@ -1357,7 +1356,6 @@ struct TextGeneratorU5BU5D_t840858C0E634690569F2445016C52BA3D4A2BE46;
 struct TextInfoU5BU5D_tE18061C3D6F2431FE14749A05930922C1EAB2320;
 struct TextShadowU5BU5D_tF37C87EBD3D8745BEDABCE2EA499DE16C15B5D8C;
 struct TextSpanU5BU5D_t5E3335EA0DC1E9CAE42ABA23B1BB679078C9BF1C;
-struct Texture2DU5BU5D_t05332F1E3F7D4493E304C702201F9BE4F9236191;
 struct TextureAccessU5BU5D_t02D7243719E98C8FA4B2925C4AACC249913D7293;
 struct TextureIdU5BU5D_t03041DBB5C72B7E6F5F694A36DC5FEA75432188A;
 struct ToggleU5BU5D_t73C98F6CC63F9D7C0B8A26533CE6D7E218D00098;
@@ -2428,7 +2426,6 @@ struct UxmlTraits_t88F6D8182D6F2E709F4C3DBAE7B859DC60461883;
 struct AddEventAdapter_tE0DE36700D110F4D267B26686541ABCF9588A6DD;
 struct UxmlTraits_t6F10CBE79BAE349D7ADF7D6B15F8A4553E43FB8C;
 struct UxmlTraits_t20BCC06498102C4B242E6F80B424A7D6C9EA6AC2;
-struct FullScreenRenderPass_t7AC73942B58AE155BA1A7D0658E4B1C3E2FF9DEA;
 struct LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60;
 struct UxmlTraits_t04E3C3815C5BF7831F5C58685571306D457A9E02;
 struct HIDLayoutBuilder_t1B1FA825DFA02D93183E7C1B3C416D4A43D56553;
@@ -2446,6 +2443,7 @@ struct Builder_t83F17A26F53DA7EA6D8C35E5C65C5DF0147E7821;
 struct ObserverState_t147E85316A8DB8E0C6B3D4485B1480B41EA6A1A8;
 struct Enumerator_t6DF3D5CC6EB756C7583B28E1CA7B752A8E591A75;
 struct UxmlTraits_t0E85D55B9F5BD022FDA6ACD0C7FFA1F6D578AEE0;
+struct PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02;
 struct UxmlTraits_tCCB5EAF98F73A5AB4F52F76E93A89092AB2BD2DF;
 struct Chunk_t8FA014C1F5133E76A25C77296B034B354E6F5FB4;
 struct ComponentDataStore_t30AEB2C2E7390C8F70201D4AA95D70E4B4F34F81;
@@ -2467,8 +2465,6 @@ struct DeviceRegainedEvent_t24153E8876417F010AA4C0C1C25D6CB792EC01D1;
 struct PlayerJoinedEvent_t5C5D2E3D39AA92954AE47B6F81CCB6E64A7F93EA;
 struct PlayerLeftEvent_tAB8D838A7D2AE2DC61694F74014E343B2EAC879A;
 struct UxmlTraits_t34F909DF058605DF301A19BB8B3A26B47C7A92B4;
-struct ShaderResources_t5CFF4C7697343EC59BAE5094B637F9EC23CE6D59;
-struct TextureResources_t9220AC464374C6AA55163CD0AC71C62B85E6C122;
 struct ComputeRequiredMarginsDelegate_tD52DC42F5E5A7054729BAB50C276AA2A922F03C3;
 struct PrepareMaterialPropertyBlockDelegate_t7451BD41914E5669CF950C7168E492DADD660A5B;
 struct Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87;
@@ -2708,7 +2704,7 @@ struct U3CModuleU3E_tFE3BA549A997AF7310E408F00A13161521C540C7
 struct U3CModuleU3E_tC9AE405E6210B66BC687F16DD644AB836AFC0299 
 {
 };
-struct U3CModuleU3E_t9E1BA9BE437C08823B6FBBCBEA8E4E4913134DBD 
+struct U3CModuleU3E_t7C5D71B9800D53F6CCBEDD89DAAAA2BA48835865 
 {
 };
 struct U3CModuleU3E_t2915620281D112A443FB14861757F697852D8729 
@@ -4271,9 +4267,6 @@ struct CompletionActionInvoker_t79D0F91F4193BD6F7BA4F4D831B00C0190E3F0F4  : publ
 	RuntimeObject* ___m_action;
 	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_completingTask;
 };
-struct ComponentUtility_t27E5B1279D6FCF05A4ED198FA160BEA52497F2AA  : public RuntimeObject
-{
-};
 struct ComputeGraphContext_t4C18687C77814418D826A1B68C0D02781A9DFC7F  : public RuntimeObject
 {
 	InternalRenderGraphContext_t7197268EBA8C241EB895B070A5E0C71B111D7503* ___wrappedContext;
@@ -5156,6 +5149,15 @@ struct HoldInteraction_t636DDC457955E74454991E73F9B048F8B5B2BE4E  : public Runti
 struct HtmlTernaryTree_t5AF490C7A18F017033F549D01B03CDEF170B5069  : public RuntimeObject
 {
 };
+struct IJobExtensions_t99A95C2F6BFF75CB0B993470FE766ED0A38B58C7  : public RuntimeObject
+{
+};
+struct IJobForExtensions_t7D79FC398F75AFC76563F3CAE1382DB0BFD821CB  : public RuntimeObject
+{
+};
+struct IJobParallelForExtensions_t3C752735A7C2E3FB7185B02D0143E0F0EE06DB46  : public RuntimeObject
+{
+};
 struct ILGenerator_t2B624D1AA8840E0A7147E6628C5606D42443617A  : public RuntimeObject
 {
 };
@@ -5299,6 +5301,9 @@ struct JobManager_tC139532E48436E2DCB0FB9EB8C75E1EA244C6530  : public RuntimeObj
 	bool ___U3CdisposedU3Ek__BackingField;
 };
 struct JobProcessor_t95EDB36E847D214B41DB3056807F5218C97DE151  : public RuntimeObject
+{
+};
+struct JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C  : public RuntimeObject
 {
 };
 struct KSStruct_tBE0E1FBFE07CC6162F018AAA56AE0961BEC1E06B  : public RuntimeObject
@@ -6069,6 +6074,9 @@ struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8  : public RuntimeObject
 struct RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3  : public RuntimeObject
 {
 };
+struct RationalTimeExtensions_t9AAD67A8507AECD84E23F5DB090F5180C2D9DEC3  : public RuntimeObject
+{
+};
 struct ReadOnlyArrayExtensions_tC3315EA41D787AC9DE011A2E5D9A771E37FAE61D  : public RuntimeObject
 {
 };
@@ -6182,9 +6190,6 @@ struct RenderGraphDebugParams_t36422B33508548E3E56CBAD04521104C2B3E669D  : publi
 	bool ___immediateMode;
 	bool ___logFrameInformation;
 	bool ___logResources;
-};
-struct RenderGraphGraphicsAutomatedTests_tCBD6EA2144145CC175CDFA945654E099C8A2C1EB  : public RuntimeObject
-{
 };
 struct RenderGraphLogger_t63D96976880E0CD356860F2470D7DAF60B1AD40C  : public RuntimeObject
 {
@@ -7353,9 +7358,6 @@ struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t0EF931E998B8390464428D66A
 {
 };
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t33835E518FD7C16B3DFBEA1570C8EAFA8481D891  : public RuntimeObject
-{
-};
-struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tDEC6A64C8275560542A387CAA0C1E45C26305FC8  : public RuntimeObject
 {
 };
 struct UnmanagedMarshal_t266EA330E458C05C980D8B8C08DF106E266E378C  : public RuntimeObject
@@ -8711,34 +8713,6 @@ struct U3CU3Ec_t463A0CCBB2471455964DBAEAD4FC0612DB2270DE  : public RuntimeObject
 struct U3CU3Ec_tB31473FE33CB23DE1098AC8F9020D024C97DE002  : public RuntimeObject
 {
 };
-struct ShaderResources_t5CFF4C7697343EC59BAE5094B637F9EC23CE6D59  : public RuntimeObject
-{
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___stopNanPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___subpixelMorphologicalAntialiasingPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___gaussianDepthOfFieldPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___bokehDepthOfFieldPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___cameraMotionBlurPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___paniniProjectionPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___lutBuilderLdrPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___lutBuilderHdrPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___bloomPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___temporalAntialiasingPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___LensFlareDataDrivenPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___LensFlareScreenSpacePS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___scalingSetupPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___easuPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___uberPostPS;
-	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___finalPostPassPS;
-	int32_t ___m_ShaderResourcesVersion;
-};
-struct TextureResources_t9220AC464374C6AA55163CD0AC71C62B85E6C122  : public RuntimeObject
-{
-	Texture2DU5BU5D_t05332F1E3F7D4493E304C702201F9BE4F9236191* ___blueNoise16LTex;
-	Texture2DU5BU5D_t05332F1E3F7D4493E304C702201F9BE4F9236191* ___filmGrainTex;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___smaaAreaTex;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___smaaSearchTex;
-	int32_t ___m_TexturesResourcesVersion;
-};
 struct U3CU3Ec_tBA5B5EEBE346D570937DDCD508A11ABBE47F8A76  : public RuntimeObject
 {
 };
@@ -8858,9 +8832,6 @@ struct U3CU3Ec_tD98F654DDC5E7541802DC882BB598C50D3597E0A  : public RuntimeObject
 {
 };
 struct Strings_t3CC9C0EEE754AA856644CEAB27255E4D64BF9032  : public RuntimeObject
-{
-};
-struct U3CU3Ec_t16E15173E641B30DFE7EF46E50C30897A1D2CEDE  : public RuntimeObject
 {
 };
 struct SharedObjectPoolBase_tAE197A0EF70B46EBFECED609BA08A8B2817876EE  : public RuntimeObject
@@ -11971,7 +11942,7 @@ struct DynamicString_tE770DEBAE0C2724E050509D4173418E74923F993  : public Dynamic
 struct EmbeddedAttribute_tC072A136C3EC5A1F105B05E9261DED58D12EB72D  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 };
-struct EmbeddedAttribute_t8480378754A363AAB5ED2D96D3B4EED46D77D9ED  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+struct EmbeddedAttribute_tB8B03F1BFFE9F2813249834CD71231A30EE443E3  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 };
 struct EmbeddedAttribute_t54DF270ED07D6741FAAE3C11E26358CFF6702D03  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
@@ -12238,6 +12209,9 @@ struct GIContributors_t10B30455F59EDB1A9FE5158C86195096551D8FA4
 		};
 		uint8_t GIContributors_t10B30455F59EDB1A9FE5158C86195096551D8FA4__padding[1];
 	};
+};
+struct GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49  : public Stack_tBD60B0E3125691193FBFC8DA8FFDD6630CB2CB47
+{
 };
 struct GlobalKeyword_tFA029618DA6ADCA20CFA44C1B8AFFF9EA097AE7D 
 {
@@ -12670,7 +12644,7 @@ struct IsReadOnlyAttribute_t0AC14E6EAFD80CA5102858F6F8DCB15B50B678A3  : public A
 struct IsUnmanagedAttribute_tBAD8DA5784B410BB3B7D79342B80DC4C7E0F07D4  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 };
-struct IsUnmanagedAttribute_t7CEF014E861C6D3096828A25A6EC0EFE68FA8D03  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+struct IsUnmanagedAttribute_t5E97458F16351C49238B25F4019AA656A0CC807E  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 };
 struct IsUnmanagedAttribute_t3DAF84943F2DC237A9BF7C03A6CADB6C41859287  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
@@ -12679,6 +12653,15 @@ struct IsUnmanagedAttribute_t3DAF84943F2DC237A9BF7C03A6CADB6C41859287  : public 
 struct JapaneseCalendar_t639E4548E016255B55B31A644186A40A5D055E0E  : public Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B
 {
 	GregorianCalendarHelper_tC77507376E36EEDABC1786237BADF1BF459F9723* ___helper;
+};
+struct JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 
+{
+	uint64_t ___jobGroup;
+	int32_t ___version;
+};
+struct JobProducerTypeAttribute_t4F137BDC862349EC5FD1A70D1ACABEDFEF2C6847  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	Type_t* ___U3CProducerTypeU3Ek__BackingField;
 };
 struct JsonParser_tF738BE4FBF77CE449E21EA2CE18E937B6692B7E6 
 {
@@ -12825,6 +12808,16 @@ struct MainCameraScreenRaycaster_t2097B856E48F6BB0CB8EDFA50E236E82EE547605  : pu
 {
 	CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* ___singleCameraArray;
 };
+struct MathfInternal_t27434D3DAEB0E34640418CF76AA9A06D6D0D7F7C 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t MathfInternal_t27434D3DAEB0E34640418CF76AA9A06D6D0D7F7C__padding[1];
+	};
+};
 struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 
 {
 	float ___m00;
@@ -12861,6 +12854,9 @@ struct MiscFacetsChecker_t1574A3CFA038774ABB2F371FFC1A8F00357B5862  : public Fac
 {
 };
 struct ModuleBuilder_tC7B7823951455CA3EFD8383CAC22E57DFC06A57A  : public Module_tABB9217F7F2BA3E0F4277D03C2B234A7313BB8D0
+{
+};
+struct MonoPInvokeCallbackAttribute_t3C659C8B8852BD4E98F7B63E73D36AEE20666527  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 };
 struct MonoPInvokeCallbackAttribute_tCB0F576FE9D9F83EAC879DEAB365905A52052C7F  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
@@ -14938,6 +14934,10 @@ struct TypeDependencyAttribute_t5965D44DD3D45E079AC5E157FC6733DEEE248546  : publ
 struct TypeForwardedFromAttribute_t6B57EB208E1AEA8F50797D6A33D691CDB60DA84E  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 	String_t* ___U3CAssemblyFullNameU3Ek__BackingField;
+};
+struct TypeInferenceRuleAttribute_t39AE4844222814241F6C40EDFFA93F5F3B7D1CFE  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	String_t* ____rule;
 };
 struct TypeTable_tEAC1ECAD849469DEA65DA2FC65B19C2D4739B67E 
 {
@@ -19966,6 +19966,11 @@ struct U3CidBufferU3Ee__FixedBuffer_tE4CA52A47737D5043418F9D66A282E93248BF2BD
 		uint8_t U3CidBufferU3Ee__FixedBuffer_tE4CA52A47737D5043418F9D66A282E93248BF2BD__padding[512];
 	};
 };
+struct TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF 
+{
+	uint32_t ___m_Numerator;
+	uint32_t ___m_Denominator;
+};
 struct CompiledResourceInfo_t22204344249241C372CFC608709931F7EEEF733C 
 {
 	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___producers;
@@ -20468,30 +20473,6 @@ struct MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshaled_pinvok
 	int32_t ___IsEditorOnly;
 };
 struct MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshaled_com
-{
-	Il2CppSafeArray* ___FilePathsData;
-	Il2CppSafeArray* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	int32_t ___IsEditorOnly;
-};
-struct MonoScriptData_t717F06936298664FAB0FAFA5250D5D2082AA30C9 
-{
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	bool ___IsEditorOnly;
-};
-struct MonoScriptData_t717F06936298664FAB0FAFA5250D5D2082AA30C9_marshaled_pinvoke
-{
-	Il2CppSafeArray* ___FilePathsData;
-	Il2CppSafeArray* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	int32_t ___IsEditorOnly;
-};
-struct MonoScriptData_t717F06936298664FAB0FAFA5250D5D2082AA30C9_marshaled_com
 {
 	Il2CppSafeArray* ___FilePathsData;
 	Il2CppSafeArray* ___TypesData;
@@ -22724,10 +22705,6 @@ struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11
 	float ___m_ColorMultiplier;
 	float ___m_FadeDuration;
 };
-struct ColorGradingMode_t980B9396D20213763F23C4D474BC079FC68BF83E 
-{
-	int32_t ___value__;
-};
 struct ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0 
 {
 	bool ___isValid;
@@ -22764,10 +22741,6 @@ struct ComInterfaceType_t8B464830D3F159D7570F73D7764300EACAE97CD5
 	int32_t ___value__;
 };
 struct CommandType_tD31CF154E77E661A0B00A7A9A45F2557D8705A56 
-{
-	int32_t ___value__;
-};
-struct CompareFunction_tF4CB32BA795A16A1488DD63D6CF4DC71B20E1518 
 {
 	int32_t ___value__;
 };
@@ -23278,10 +23251,6 @@ struct DistanceMetric_t071B9815BB961E33F7CA2C553CA725F61AE09EDE
 	int32_t ___value__;
 };
 struct DllImportSearchPath_t5063605DB6535331A8766734AEC753F68C61263F 
-{
-	int32_t ___value__;
-};
-struct Downsampling_tFE6A5D41D0A9881972AE6C6470FA5E1700410D49 
 {
 	int32_t ___value__;
 };
@@ -23843,10 +23812,6 @@ struct GyroscopeState_t6C1BC700557D943111882E3634CA7411EE531B87
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___angularVelocity;
 };
-struct HDRColorBufferPrecision_tEF57E1CB7C2B230E3AFF5D6628010DD456EA58C7 
-{
-	int32_t ___value__;
-};
 struct HDRColorspace_tD9D8810DFB7CDAE80D4A4F17D516F351527DBDC0 
 {
 	int32_t ___value__;
@@ -24331,6 +24296,13 @@ struct InvokePolicy_t35E3E36A3D113CBFFEB13243E17691CBBDF1ED9B
 struct IteratorStateMachineAttribute_t70324530BC47D8A0DCB1EA2CC645498AC2EF0019  : public StateMachineAttribute_t9D7900B1B0E39C142A948AFD6025BBE3CE09AA76
 {
 };
+struct JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3 
+{
+	int32_t ___BatchSize;
+	int32_t ___NumJobs;
+	int32_t ___TotalIterationCount;
+	intptr_t ___StartEndIndex;
+};
 struct JoystickState_t03D95BB2BA3497FA34F7F2C395126FE079DBAD23 
 {
 	int32_t ___buttons;
@@ -24355,10 +24327,6 @@ struct KeyboardNavigationOperation_tCEB962A6C192C10343A351F0415BD8084E3B8635
 struct KeyboardState_t0329332A3CC9A0DC406D9E4C59E2C3F1CCCAD28E 
 {
 	U3CkeysU3Ee__FixedBuffer_t042985C8A4742730483B7863D903A899805230F3 ___keys;
-};
-struct LODCrossFadeDitheringType_tB8C1B60F3BCA8E2BEFB7F09B3D93F96CE2CB1667 
-{
-	int32_t ___value__;
 };
 struct LODParameters_t54D2AA0FD8E53BCF51D7A42BC1A72FCA8C78A08A 
 {
@@ -24467,22 +24435,6 @@ struct LensFlareOcclusionPermutation_t6CAF74E06ACC8BA250EBCFAF05F58A041DB79175
 	int32_t ___value__;
 };
 struct LibraryVisibility_t76B0B5A9BE676509B8819292AE8AA35EAA3A53E9 
-{
-	int32_t ___value__;
-};
-struct LightCookieFormat_tDED41022799DAEAA99C550708D80B99A2A8F9EC1 
-{
-	int32_t ___value__;
-};
-struct LightCookieResolution_t10D8305CBC46C8C4261C5EFAA031A2B35AF2BF39 
-{
-	int32_t ___value__;
-};
-struct LightProbeSystem_tEFBD1F503CF60DFBD07B38E3422CA44B5825921C 
-{
-	int32_t ___value__;
-};
-struct LightRenderingMode_t38A0DEB49D920E66D4854F5C54437D11BBA6D024 
 {
 	int32_t ___value__;
 };
@@ -24784,10 +24736,6 @@ struct MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1
 };
 #pragma pack(pop, tp)
 struct MoveDirection_t0981B415CB2BEB70F14E647EDE5DE29F52DEC5E6 
-{
-	int32_t ___value__;
-};
-struct MsaaQuality_tE945475230F4F9265C9C862D32DE0484CB458FF9 
 {
 	int32_t ___value__;
 };
@@ -25150,10 +25098,6 @@ struct PickingMode_t5699BF9E5F2587E0D297984D5BF5B63B768E66AC
 {
 	int32_t ___value__;
 };
-struct PipelineDebugLevel_tA1231A8106C64D773860E40E46555EB8682D746B 
-{
-	int32_t ___value__;
-};
 struct PipelineHelpURLAttribute_t421C536050A694B34FBC13BB03E82B870973C41F  : public HelpURLAttribute_tC499F826613B34E001AEAE5D42BA2B3AD365E91D
 {
 	String_t* ___U3CpipelineNameU3Ek__BackingField;
@@ -25366,6 +25310,11 @@ struct RTHandleProperties_tBCB3E1EFE8B366995704C1322B9C443877580CD6
 	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___currentRenderTargetSize;
 	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___rtHandleScale;
 };
+struct RationalTime_t18EE8DD0E51E2B1FCC58B6692D6A3C3E7C5100F0 
+{
+	int64_t ___m_Count;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___m_TicksPerSecond;
+};
 struct Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Origin;
@@ -25562,10 +25511,6 @@ struct RendererList_t608CE60421616EF4211F5B8AC62E3C36D4BDDF85
 	uint32_t ___contextID;
 };
 struct RendererListHandleType_tF4A920C02D6273E876EA0E5E7BF6B7096E278E57 
-{
-	int32_t ___value__;
-};
-struct RendererType_t952E4F0C867408594D6DB4894BEFF90C854B6C90 
 {
 	int32_t ___value__;
 };
@@ -25843,6 +25788,10 @@ struct ScaleVector3Processor_t245F186E78D9E5523CA4EFA49F4B8A1BF711E821  : public
 	float ___y;
 	float ___z;
 };
+struct ScheduleMode_t5181E0744D68573082AE34BA5B388ECB27DFD1E2 
+{
+	int32_t ___value__;
+};
 struct SchemaType_tEA68C27A0E1DF3AA694B9C8C3025FEDF4D713711 
 {
 	int32_t ___value__;
@@ -25858,10 +25807,6 @@ struct ScreenOrientation_t928A8AFB38625B9356E57BA75BBD90FA653DCFC2
 struct ScriptableRenderContext_t5AB09B3602BEB456E0DC3D53926D3A3BDAF08E36 
 {
 	intptr_t ___m_Ptr;
-};
-struct ScriptableRenderPassInput_t2E28A5DE1B3B8001EE14298E0133EFF3204DE645 
-{
-	int32_t ___value__;
 };
 struct ScrollViewMode_t6968C4B2BB3C46CF458E96BCE644E88B6893DE17 
 {
@@ -25916,10 +25861,6 @@ struct SerializedVirtualizationData_t8EA4D4340BC124E7FC98396C263F0FEC091B53CB  :
 	int32_t ___anchoredItemIndex;
 	float ___anchorOffset;
 };
-struct ShEvalMode_t3815527819404E432D030BC50500EF1C5A0C0117 
-{
-	int32_t ___value__;
-};
 struct ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CposU3Ek__BackingField;
@@ -25963,14 +25904,6 @@ struct ShadingRateCombiner_tF7F5DDD676DF45F67B2A7BC7F14373F4DFAD2B1C
 	int32_t ___value__;
 };
 struct ShadingRateFragmentSize_tE61BBA9B957F4537F04519746FCABE0F5FA94C9F 
-{
-	int32_t ___value__;
-};
-struct ShadowQuality_tA2A95092FE517E629C7015F01CFFD83704BFAD24 
-{
-	int32_t ___value__;
-};
-struct ShadowResolution_t6C40A535E6EC0EFEF19D5BD8B3470E3EAEE58C2F 
 {
 	int32_t ___value__;
 };
@@ -26018,10 +25951,6 @@ struct SoapTypeAttribute_tE8A0EF38E4DEF376CFA8EF0916F39CCCC42CBEA8  : public Soa
 	String_t* ____xmlTypeNamespace;
 	bool ____isType;
 	bool ____isElement;
-};
-struct SoftShadowQuality_t912D2519B85B76887C033210FFE985794D829D14 
-{
-	int32_t ___value__;
 };
 struct SortDirection_t1CF90CCD8B5D86EF2630D0F080500514821467E4 
 {
@@ -26071,18 +26000,10 @@ struct State_tC241510131965D8DE1919EB16A3650E397E5AEAB_marshaled_com
 	float ___sharpness;
 	int32_t ___isPremultiplied;
 };
-struct StencilOp_t35EB362AF3CF60D7EC63DF5282B8256BF9985436 
-{
-	int32_t ___value__;
-};
 struct StickDeadzoneProcessor_t0CAE8DDAB3FC7A3490FFFD74AEEC04A57837BA39  : public InputProcessor_1_tD1A40E0E5825AAABC3416EC96E087FF6E6351DD2
 {
 	float ___min;
 	float ___max;
-};
-struct StoreActionsOptimization_tB5EB82E81175365B1DF3C5DE71F35E77E3B38B4A 
-{
-	int32_t ___value__;
 };
 struct StoreReason_tB71F110DFEED47ED8929B7874BE46BD4AFA9D5AC 
 {
@@ -26661,6 +26582,10 @@ struct TypeFilterLevel_t4CFC812CEE96910D8935844A5F8FB7A437BFB711
 {
 	int32_t ___value__;
 };
+struct TypeInferenceRules_tEFD8B0F1D39A1EA0A86C159333202C56FFD90B87 
+{
+	int32_t ___value__;
+};
 struct TypeNameFormatFlags_t00D687A575A2ACE42F61ABB969358B95C5B547DB 
 {
 	int32_t ___value__;
@@ -26752,10 +26677,6 @@ struct UnicodeCategory_tC5D046642FA3366AD265B73F3F43140D8CD9CB2A
 	int32_t ___value__;
 };
 struct UnmanagedType_t1FCBA87EA6FB08970C2DDABD6FFF36A612DB8EB9 
-{
-	int32_t ___value__;
-};
-struct UpscalingFilterSelection_t2C57376448148F3F22A29AAD71BBB7DB99D8F9A4 
 {
 	int32_t ___value__;
 };
@@ -26935,10 +26856,6 @@ struct VisualTreeWorldSpaceHierarchyFlagsUpdater_t0299C8A914EA4351F4839CF5EE686F
 struct VolumeComponentMenuForRenderPipeline_t5847DFC2872CCA87BEB212DB568ECA6E2E75D833  : public VolumeComponentMenu_t15FF12A6DEAE11D4059CABEF6E1806EEF83E17F9
 {
 	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___U3CpipelineTypesU3Ek__BackingField;
-};
-struct VolumeFrameworkUpdateMode_tCD9A8BEF3700F3AA490F1BB39EF8A88E94398627 
-{
-	int32_t ___value__;
 };
 struct VrsResources_t5ED87EDD8FED7DD9728095BF4475457CC073CB86  : public RuntimeObject
 {
@@ -27648,14 +27565,6 @@ struct UxmlFactory_t923B56EC8735B50BC503E698596ED71BB89B7D3B  : public UxmlFacto
 struct UxmlFactory_t6845309ECE79DB9008EF5BADCA7B0E8DCD07E5EC  : public UxmlFactory_2_t3F0ADF48E45D3EC6593FF4202C610D970C5E2983
 {
 };
-struct InjectionPoint_tA3CAE07BF8599B01D538E25644D7AFDCE01FE73A 
-{
-	int32_t ___value__;
-};
-struct Version_t6E35BD7ECDF1EE808C77CEB4BE90030F822029DE 
-{
-	int32_t ___value__;
-};
 struct FunctionType_t600A9455439113F6BBAE660AEAFA6A400122C8EB 
 {
 	int32_t ___value__;
@@ -28344,6 +28253,13 @@ struct UxmlFactory_t298BA2C512AC0D9AE1BE057D7054AE3EB1C38CF5  : public UxmlFacto
 struct Error_tA96F6BC4A908C7D5F1E1C4A60CE2AC73DCA88D4A 
 {
 	int32_t ___value__;
+};
+struct JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B 
+{
+	JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 ___Dependency;
+	int32_t ___ScheduleMode;
+	intptr_t ___ReflectionData;
+	intptr_t ___JobDataPtr;
 };
 struct Button_tB77F320590E9A3E16FDB75B0E162337BD9764879 
 {
@@ -35847,15 +35763,6 @@ struct StartDragArgs_tF1E3C0A058F6E7B936541CFCCFB42965A2B452C9_marshaled_com
 	RuntimeObject* ___U3CunityObjectReferencesU3Ek__BackingField;
 	Il2CppChar** ___U3CassetPathsU3Ek__BackingField;
 };
-struct StencilStateData_t4181AB6F6A795950C67270CB147999D915071462  : public RuntimeObject
-{
-	bool ___overrideStencilState;
-	int32_t ___stencilReference;
-	int32_t ___stencilCompareFunction;
-	int32_t ___passOperation;
-	int32_t ___failOperation;
-	int32_t ___zFailOperation;
-};
 struct StoreAudit_t9E8FF144788FDFF9C68E912C5BB87C533F860292 
 {
 	int32_t ___reason;
@@ -41656,11 +41563,6 @@ struct PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_marshaled_com
 	float ___m_Twist;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Radius;
 };
-struct PostProcessData_t106B5638205D5CBAF18F2573047F2DC23BDB2F05  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	ShaderResources_t5CFF4C7697343EC59BAE5094B637F9EC23CE6D59* ___shaders;
-	TextureResources_t9220AC464374C6AA55163CD0AC71C62B85E6C122* ___textures;
-};
 struct PowerOfTwoTextureAtlas_t61993AC8A0A6F9EECDE7654B38A56D9CE9F068AE  : public Texture2DAtlas_t770EADF1E6B5E862E78D0EC18118B4A3E023334F
 {
 	int32_t ___m_MipPadding;
@@ -42011,10 +41913,6 @@ struct SchemaElementDecl_t985EC0AC51DF3E0339341916D061539CF41846AD  : public Sch
 	int32_t ___block;
 	CompiledIdentityConstraintU5BU5D_tA8E35C25853FEF33AAE27549EE1E30F039429D16* ___constraints;
 	XmlSchemaElement_t24D5940E4EB4E5FFDAD1772AFBD7A83CD992C970* ___schemaElement;
-};
-struct ScriptableRendererFeature_tF2ED08AD2498105378D4DAB0386A0F8A144EF4C6  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	bool ___m_Active;
 };
 struct SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
@@ -43168,6 +43066,9 @@ struct U3CListControlLayoutsU3Ed__97_tC8C680F2D4C28E488ED3C7C627EABE2B7B0CBE7B  
 	Enumerator_tC7FEC7C0C46B33E076C8049925C674971CBC97DE ___U3CU3E7__wrap2;
 	Enumerator_t52594E7DD43EA93200C520E7F24A36FC9F19D3ED ___U3CU3E7__wrap3;
 	Enumerator_t4025852652DF630539AB5A80E27707ED96617DEB ___U3CU3E7__wrap4;
+};
+struct PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02  : public MulticastDelegate_t
+{
 };
 struct RenewalDelegate_t4A35F3F270A9D3F1EA690C514B683AE92AFA9F2D  : public MulticastDelegate_t
 {
@@ -45116,17 +45017,6 @@ struct FilterFunction_t32E0707BD9D9F770A2A7578985A5C163FC1AAEFF_marshaled_com
 	FixedBuffer4_1_tFD261E0E1A5ECEFC54C0B0B89FA6BFEE477E4D8C ___m_Parameters;
 	int32_t ___m_ParameterCount;
 	FilterFunctionDefinition_tFE41DB19FFB74F4D2B54BF44D1D2051B57FC82F2* ___m_CustomDefinition;
-};
-struct FullScreenPassRendererFeature_t658D4853FA7FE7C1538FC91AB0065344425C1E21  : public ScriptableRendererFeature_tF2ED08AD2498105378D4DAB0386A0F8A144EF4C6
-{
-	int32_t ___injectionPoint;
-	bool ___fetchColorBuffer;
-	int32_t ___requirements;
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___passMaterial;
-	int32_t ___passIndex;
-	bool ___bindDepthStencilAttachment;
-	FullScreenRenderPass_t7AC73942B58AE155BA1A7D0658E4B1C3E2FF9DEA* ___m_FullScreenPass;
-	int32_t ___m_Version;
 };
 struct GenericTypeParameterBuilder_tAF14CE746360ECC49846772B81BDF591555AFC43  : public TypeInfo_tC4F59663C70D17D50BC99D53DCE74BFB9701012D
 {
@@ -47623,9 +47513,6 @@ struct FreeCamera_t2904FFED3AE2A0BFC5BB3A978B57A3A5A4DD1571  : public MonoBehavi
 	bool ___leftShiftBoost;
 	bool ___leftShift;
 	bool ___fire1;
-};
-struct FullScreenPassRendererFeature_OldGUID_t4AF397475381ACA94CA1A9773CA300A38E054284  : public FullScreenPassRendererFeature_t658D4853FA7FE7C1538FC91AB0065344425C1E21
-{
 };
 struct Gamepad_tA8C0E40B4F0828615C6C6E1A69AAEBE5AA643A4C  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
 {
@@ -51688,6 +51575,10 @@ struct InternalRemotingServices_t81F9F079B19BF2581D39F50A82B4A02F06335628_Static
 {
 	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ____soapAttributes;
 };
+struct JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_StaticFields
+{
+	PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* ___PanicFunction;
+};
 struct KeyBuilder_t03E7B5B8DC79A5A14A9D2B5260F8E57C7CECCDF7_StaticFields
 {
 	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ___rng;
@@ -52103,10 +51994,6 @@ struct RenderGraphCompilationCache_t25B996EBE41BF50CAE9A81E97B9BBE376AAB55D2_Sta
 	SortComparer_tE3CAECB7112E333A890044187A84B45DA9EF8A05* ___s_EntryComparer;
 	SortComparer_t18B580FB9BFBDD618535E80A0CA612296909F6B7* ___s_NativeEntryComparer;
 	int32_t ___s_Hash;
-};
-struct RenderGraphGraphicsAutomatedTests_tCBD6EA2144145CC175CDFA945654E099C8A2C1EB_StaticFields
-{
-	bool ___U3CenabledU3Ek__BackingField;
 };
 struct RenderGraphObjectPool_t2F5488D55D836B54B6E85D2952105BA61AEE6437_StaticFields
 {
@@ -53508,11 +53395,6 @@ struct Strings_t3CC9C0EEE754AA856644CEAB27255E4D64BF9032_StaticFields
 	NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4 ___LogFrameInformation;
 	NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4 ___LogResources;
 };
-struct U3CU3Ec_t16E15173E641B30DFE7EF46E50C30897A1D2CEDE_StaticFields
-{
-	U3CU3Ec_t16E15173E641B30DFE7EF46E50C30897A1D2CEDE* ___U3CU3E9;
-	Predicate_1_tEB15485FDAFC48C82EE54427A8DBDB401213706C* ___U3CU3E9__1_0;
-};
 struct U3CU3Ec_tA5F013AAA6607A3B4350E6C95A6B668FAC3EB446_StaticFields
 {
 	U3CU3Ec_tA5F013AAA6607A3B4350E6C95A6B668FAC3EB446* ___U3CU3E9;
@@ -54156,6 +54038,14 @@ struct DefaultBinder_t0CB85CF7AAAEF6D0C9C229DA447A3C83468C5D4C_StaticFields
 {
 	PrimitivesU5BU5D_tB2AE162451A2955540370147882216B8028584DF* ____primitiveConversions;
 };
+struct DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E_StaticFields
+{
+	DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E ___Zero;
+	DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E ___MinValue;
+	DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E ___MaxValue;
+	int32_t ___TicksPerSecondBits;
+	int32_t ___NonPow2TpsBits;
+};
 struct DtdValidator_tF916F1805E2290242B688583602409378173CF17_StaticFields
 {
 	NamespaceManager_t11F38F50ED5125AA9B386304C4876AD41B68C52E* ___namespaceManager;
@@ -54233,6 +54123,12 @@ struct LayoutDefaults_tA7724F57CC1143AE81FC312C72A05C0B238D04B1_StaticFields
 struct MCMDictionary_tBAF54AD0F5FA5C82DF52F0835AFF93EE314BC53A_StaticFields
 {
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___InternalKeys;
+};
+struct MathfInternal_t27434D3DAEB0E34640418CF76AA9A06D6D0D7F7C_StaticFields
+{
+	float ___FloatMinNormal;
+	float ___FloatMinDenormal;
+	bool ___IsFlushToZeroEnabled;
 };
 struct MeshWriteDataPool_t3FB1670F1C2CCE8683ABBB0D74B5286C7E5E9B81_StaticFields
 {
@@ -54539,6 +54435,22 @@ struct DecCalc_t0E9BD1BAF25BAD15940FF4BAB400D012A8DEBCA9_StaticFields
 	UInt64U5BU5D_tAB1A62450AC0899188486EDB9FC066B8BEED9299* ___s_ulongPowers10;
 	DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* ___s_doublePowers10;
 	PowerOvflU5BU5D_t8BB6F43AF19F1F7C7558815B4684875BC320735B* ___PowerOvflValues;
+};
+struct TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF_StaticFields
+{
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___DefaultTicksPerSecond;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond24;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond25;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond30;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond50;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond60;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond120;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond2397;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond2425;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond2997;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond5994;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___TicksPerSecond11988;
+	TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF ___DiscreteTimeRate;
 };
 struct UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_StaticFields
 {
@@ -67489,67 +67401,67 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5367 = { sizeof(__StaticArra
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5368;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5368 = { sizeof(U3CPrivateImplementationDetailsU3E_tC0CFE0E72EA6AEB9FDCA54EF2234CE64CE60C772), -1, sizeof(U3CPrivateImplementationDetailsU3E_tC0CFE0E72EA6AEB9FDCA54EF2234CE64CE60C772_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5369;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5369 = { sizeof(U3CModuleU3E_t9E1BA9BE437C08823B6FBBCBEA8E4E4913134DBD), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5369 = { sizeof(U3CModuleU3E_t7C5D71B9800D53F6CCBEDD89DAAAA2BA48835865), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5370;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5370 = { sizeof(EmbeddedAttribute_t8480378754A363AAB5ED2D96D3B4EED46D77D9ED), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5370 = { sizeof(EmbeddedAttribute_tB8B03F1BFFE9F2813249834CD71231A30EE443E3), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5371;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5371 = { sizeof(IsUnmanagedAttribute_t7CEF014E861C6D3096828A25A6EC0EFE68FA8D03), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5371 = { sizeof(IsUnmanagedAttribute_t5E97458F16351C49238B25F4019AA656A0CC807E), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5372;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5372 = { sizeof(FullScreenPassRendererFeature_OldGUID_t4AF397475381ACA94CA1A9773CA300A38E054284), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5372 = { sizeof(MonoPInvokeCallbackAttribute_t3C659C8B8852BD4E98F7B63E73D36AEE20666527), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5373;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5373 = { sizeof(MonoScriptData_t717F06936298664FAB0FAFA5250D5D2082AA30C9)+ sizeof(RuntimeObject), sizeof(MonoScriptData_t717F06936298664FAB0FAFA5250D5D2082AA30C9_marshaled_pinvoke), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5373 = { sizeof(MathfInternal_t27434D3DAEB0E34640418CF76AA9A06D6D0D7F7C)+ sizeof(RuntimeObject), sizeof(MathfInternal_t27434D3DAEB0E34640418CF76AA9A06D6D0D7F7C), sizeof(MathfInternal_t27434D3DAEB0E34640418CF76AA9A06D6D0D7F7C_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5374;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5374 = { sizeof(UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tDEC6A64C8275560542A387CAA0C1E45C26305FC8), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5374 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5375;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5375 = { sizeof(U3CU3Ec_t16E15173E641B30DFE7EF46E50C30897A1D2CEDE), -1, sizeof(U3CU3Ec_t16E15173E641B30DFE7EF46E50C30897A1D2CEDE_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5375 = { sizeof(TypeInferenceRuleAttribute_t39AE4844222814241F6C40EDFFA93F5F3B7D1CFE), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5376;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5376 = { sizeof(RenderGraphGraphicsAutomatedTests_tCBD6EA2144145CC175CDFA945654E099C8A2C1EB), -1, sizeof(RenderGraphGraphicsAutomatedTests_tCBD6EA2144145CC175CDFA945654E099C8A2C1EB_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5376 = { sizeof(GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5377;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5377 = { sizeof(ComponentUtility_t27E5B1279D6FCF05A4ED198FA160BEA52497F2AA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5377 = { 0, -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5378;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5378 = { sizeof(ShaderResources_t5CFF4C7697343EC59BAE5094B637F9EC23CE6D59), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5378 = { 0, 0, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5379;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5379 = { sizeof(TextureResources_t9220AC464374C6AA55163CD0AC71C62B85E6C122), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5379 = { 1 + sizeof(RuntimeObject), 1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5380;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5380 = { sizeof(PostProcessData_t106B5638205D5CBAF18F2573047F2DC23BDB2F05), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5380 = { sizeof(IJobExtensions_t99A95C2F6BFF75CB0B993470FE766ED0A38B58C7), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5381;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5381 = { sizeof(StencilStateData_t4181AB6F6A795950C67270CB147999D915071462), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5381 = { 0, -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5382;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5382 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5382 = { 0, 0, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5383;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5383 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5383 = { 1 + sizeof(RuntimeObject), 1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5384;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5384 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5384 = { sizeof(IJobForExtensions_t7D79FC398F75AFC76563F3CAE1382DB0BFD821CB), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5385;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5385 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5385 = { 0, -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5386;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5386 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5386 = { 0, 0, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5387;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5387 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5387 = { 1 + sizeof(RuntimeObject), 1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5388;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5388 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5388 = { sizeof(IJobParallelForExtensions_t3C752735A7C2E3FB7185B02D0143E0F0EE06DB46), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5389;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5389 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5389 = { sizeof(JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08)+ sizeof(RuntimeObject), sizeof(JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5390;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5390 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5390 = { sizeof(JobProducerTypeAttribute_t4F137BDC862349EC5FD1A70D1ACABEDFEF2C6847), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5391;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5391 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5391 = { sizeof(JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3)+ sizeof(RuntimeObject), sizeof(JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5392;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5392 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5393;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5393 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5393 = { sizeof(JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B)+ sizeof(RuntimeObject), sizeof(JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5394;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5394 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5394 = { sizeof(PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02), sizeof(Il2CppMethodPointer), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5395;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5395 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5395 = { sizeof(JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C), -1, sizeof(JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5396;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5396 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5396 = { sizeof(DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E)+ sizeof(RuntimeObject), sizeof(DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E), sizeof(DiscreteTime_t0954C3B93A9A500A04D33E309649C1CD2780C41E_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5397;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5397 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5397 = { sizeof(TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF)+ sizeof(RuntimeObject), sizeof(TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF), sizeof(TicksPerSecond_t8EB7513122EF9DDB6EA2F960C53F4FD196D53BEF_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5398;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5398 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5398 = { sizeof(RationalTime_t18EE8DD0E51E2B1FCC58B6692D6A3C3E7C5100F0)+ sizeof(RuntimeObject), sizeof(RationalTime_t18EE8DD0E51E2B1FCC58B6692D6A3C3E7C5100F0), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize5399;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5399 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5399 = { sizeof(RationalTimeExtensions_t9AAD67A8507AECD84E23F5DB090F5180C2D9DEC3), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -1,6 +1,6 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.2.6f1
-CRC: 1780585916
+CRC: 2104258857
 HashAppended: 0
 AssetBundleManifest:
   AssetBundleInfos:
@@ -8,20 +8,23 @@ AssetBundleManifest:
       Name: ardebugmenu
       Dependencies: {}
     Info_1:
-      Name: key
-      Dependencies: {}
-    Info_2:
-      Name: key2
-      Dependencies: {}
-    Info_3:
       Name: key3
       Dependencies: {}
+    Info_2:
+      Name: chest
+      Dependencies: {}
+    Info_3:
+      Name: key
+      Dependencies: {}
     Info_4:
-      Name: key4
+      Name: key2
       Dependencies: {}
     Info_5:
-      Name: key5
+      Name: key4
       Dependencies: {}
     Info_6:
-      Name: chest
+      Name: cubo
+      Dependencies: {}
+    Info_7:
+      Name: key5
       Dependencies: {}

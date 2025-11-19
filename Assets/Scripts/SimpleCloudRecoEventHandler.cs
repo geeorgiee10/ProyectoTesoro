@@ -34,7 +34,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
     [SerializeField] TextMeshProUGUI m_Object;
     public ImageTargetBehaviour ImageTargetTemplate;
 
-    string[] pokemon = { "Star Wars" };
+    string[] pokemon = { "Harry Potter" };
 
     public void GenerarPokes()
     {
@@ -108,7 +108,11 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
             string[] allAssetNames = bundle.GetAllAssetNames();
             string gameObjectName = Path.GetFileNameWithoutExtension(allAssetNames[0]).ToString();
             GameObject objectFound = bundle.LoadAsset(gameObjectName) as GameObject;
-            Instantiate(objectFound, transform.position, transform.rotation);
+            
+
+            GameObject clone = Instantiate(objectFound, new Vector3(0f, 0f, 0f), transform.rotation);
+
+            clone.transform.localScale = new Vector3(0.0005f, 0.0005f, 0.0005f); 
 
         }
     }

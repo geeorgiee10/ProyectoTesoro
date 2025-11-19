@@ -1,6 +1,5 @@
 {
 	"nombre": "Gladiator",
-	"url": "https://drive.google.com/uc?export=download&id=1PRpxjLYtmRB8jvNJ0pN7eq8BseWOV57u",
-	"adivinanza": "Entre mares embrujados y tesoros ocultos, 
-	una maldición convierte a la tripulación en espectros a la luz de la luna."
+	"url": "https://drive.google.com/uc?export=download&id=11IGRpE08eTnluLW3-7ZXnQ4mU6RGBe8t",
+	"adivinanza": "Entre mares embrujados y tesoros ocultos, una maldición convierte a la tripulación en espectros a la luz de la luna."
 }

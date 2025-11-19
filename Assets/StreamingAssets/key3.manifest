@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.2.6f1
-CRC: 4250185438
+CRC: 3759215370
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fd6e185aff603cc3488f752e806264cb
+    Hash: 033fc6eaf3e510990ce6fa27c9cddfc5
   TypeTreeHash:
     serializedVersion: 2
     Hash: 756c782b9b6ee152b0d33e7b9fa049d2
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 2ba664c3c3c35b7eef6326846039b09f
+    Hash: 4aa84a89b224ee8f44fc4ccf93f64524
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,5 +31,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Prefabs/key3.glb
+- Assets/Prefabs/key3.prefab
 Dependencies: []
