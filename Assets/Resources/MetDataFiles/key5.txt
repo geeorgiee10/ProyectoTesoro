@@ -1,7 +1,8 @@
 {
 	"nombre": "Gladiator",
-	"url": "https://drive.google.com/uc?export=download&id=11IGRpE08eTnluLW3-7ZXnQ4mU6RGBe8t",
+	"url": "https://drive.google.com/uc?export=download&id=19g6lhpu7tgbFNmnh9fRZrqzbDEwpFrFd",
 	"adivinanza": "Entre mares embrujados y tesoros ocultos, una maldicion convierte a la tripulacion en espectros a la luz de la luna.",
 	"respuesta": "Piratas del Caribe",
-	"esPrimera": false
+	"esPrimera": false,
+	"esUltima": false
 }

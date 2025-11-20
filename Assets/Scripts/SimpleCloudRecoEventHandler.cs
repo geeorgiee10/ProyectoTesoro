@@ -15,6 +15,7 @@ public class MetaDatos
     public string adivinanza;
     public string respuesta;
     public bool esPrimera;
+    public bool esUltima;
 
     public static MetaDatos CreateFromJSON(string jsonString)
     {
@@ -114,9 +115,16 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
             GameObject objectFound = bundle.LoadAsset(gameObjectName) as GameObject;
             
 
-            modeloActual = Instantiate(objectFound, new Vector3(0f, 0f, 0f), transform.rotation);
+            modeloActual = Instantiate(
+                objectFound, 
+                ImageTargetTemplate.transform
+            );
 
-            modeloActual.transform.localScale = new Vector3(0.0005f, 0.0005f, 0.0005f); 
+            modeloActual.transform.localPosition = new Vector3(0f, 0f, 0.05f);
+
+            modeloActual.transform.localRotation = Quaternion.Euler(18f, 0f, 0f);
+
+            modeloActual.transform.localScale = Vector3.one * 0.0005f;
 
         }
     }
@@ -140,7 +148,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         {
             juegoIniciado = true;
             StartCoroutine(Acierto(datos));
-            siguienteRespuesta = datos.respuesta;
             return;
         }
         
@@ -152,12 +159,13 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         if(datos.nombre == siguienteRespuesta)
         {
-            siguienteRespuesta = datos.respuesta;
             StartCoroutine(Acierto(datos));
+            return;
         }
         else
         {
             StartCoroutine(Fallo());
+            return;
         }
 
         //StartCoroutine(GetAssetBundle(datos.url));
@@ -173,10 +181,17 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         yield return StartCoroutine(GetAssetBundle(datos.url));
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
+
+        if (datos.esUltima)
+        {
+            textoCanva.text = "¡ENHORABUENA! Has completado toda la mision y encontrado el tesoro perdido.";
+            yield break;
+        }
 
         textoCanva.text = "Adivinanza:\n\n" + datos.adivinanza;
         siguienteRespuesta = datos.respuesta;
+
 
         mCloudRecoBehaviour.ClearObservers();
         mCloudRecoBehaviour.enabled = false;
