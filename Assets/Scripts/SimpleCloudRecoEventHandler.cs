@@ -13,6 +13,8 @@ public class MetaDatos
     public string nombre;
     public string url;
     public string adivinanza;
+    public string respuesta;
+    public bool esPrimera;
 
     public static MetaDatos CreateFromJSON(string jsonString)
     {
@@ -27,23 +29,26 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
     CloudRecoBehaviour mCloudRecoBehaviour;
     bool mIsScanning = false;
-    string mTargetMetadata = "";
-    string mTargetMetadataText = "";
-    string mTargetMetadataURL = "";
-    string mTargetMetadataError = "";
-    [SerializeField] TextMeshProUGUI m_Object;
+
+    string siguienteRespuesta = "";
+    bool juegoIniciado = false;
+
+
+
+    int vidas = 3;
+
+    [SerializeField] private TextMeshProUGUI textoCanva;
+    [SerializeField] private TextMeshProUGUI vidasTexto;
+
     public ImageTargetBehaviour ImageTargetTemplate;
 
-    string[] pokemon = { "Harry Potter" };
+    GameObject modeloActual;
 
-    public void GenerarPokes()
-    {
-        m_Object.text = pokemon[Random.Range(0, pokemon.Length)];
-    }
 
     void Start()
     {
-        GenerarPokes();
+        textoCanva.text = "Busca la primera pelicula para empezar la busqueda";
+        vidasTexto.text = "Vidas: " + vidas;
     }
 
     // Register cloud reco callbacks
@@ -100,7 +105,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
-            mTargetMetadataError = www.result.ToString();
         }
         else
         {
@@ -110,9 +114,9 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
             GameObject objectFound = bundle.LoadAsset(gameObjectName) as GameObject;
             
 
-            GameObject clone = Instantiate(objectFound, new Vector3(0f, 0f, 0f), transform.rotation);
+            modeloActual = Instantiate(objectFound, new Vector3(0f, 0f, 0f), transform.rotation);
 
-            clone.transform.localScale = new Vector3(0.0005f, 0.0005f, 0.0005f); 
+            modeloActual.transform.localScale = new Vector3(0.0005f, 0.0005f, 0.0005f); 
 
         }
     }
@@ -124,52 +128,93 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         datos = MetaDatos.CreateFromJSON(cloudRecoSearchResult.MetaData);
 
-        StartCoroutine(GetAssetBundle(datos.url));
+        //mCloudRecoBehaviour.enabled = false;
 
-        // Store the target metadata
-        mTargetMetadata = datos.nombre;
-        mTargetMetadataText = datos.adivinanza;
-        mTargetMetadataURL = datos.url;
-
-        if (mTargetMetadata == m_Object.text)
-        {
-            m_Object.text = "Correcto";
-        }
-            
-        else
-            m_Object.text = "Fallaste";
-
-        // Stop the scanning by disabling the behaviour
-        mCloudRecoBehaviour.enabled = false;
-
-        if (ImageTargetTemplate)
+        if (ImageTargetTemplate != null)
         {
             /* Enable the new result with the same ImageTargetBehaviour: */
             mCloudRecoBehaviour.EnableObservers(cloudRecoSearchResult, ImageTargetTemplate.gameObject);
         }
+
+        if(!juegoIniciado && datos.esPrimera)
+        {
+            juegoIniciado = true;
+            StartCoroutine(Acierto(datos));
+            siguienteRespuesta = datos.respuesta;
+            return;
+        }
+        
+        if(!juegoIniciado && !datos.esPrimera)
+        {
+            StartCoroutine(FallarPrimera());
+            return;
+        }
+
+        if(datos.nombre == siguienteRespuesta)
+        {
+            siguienteRespuesta = datos.respuesta;
+            StartCoroutine(Acierto(datos));
+        }
+        else
+        {
+            StartCoroutine(Fallo());
+        }
+
+        //StartCoroutine(GetAssetBundle(datos.url));
+        
     }
 
-    void OnGUI()
+    IEnumerator Acierto(MetaDatos datos)
     {
-        // Display current 'scanning' status
-        GUI.Box(new Rect(100, 100, 200, 50), mIsScanning ? "Scanning" : "Not scanning");
-        // Display metadata of latest detected cloud-target
-        GUI.Box(new Rect(100, 200, 200, 50), "Nombre: " + mTargetMetadata);
-        GUI.Box(new Rect(100, 300, 700, 100), "Adivinanza: " + mTargetMetadataText);
-        GUI.Box(new Rect(100, 400, 700, 50), "URL: " + mTargetMetadataURL);
-        GUI.Box(new Rect(100, 500, 700, 50), "Error: " + mTargetMetadataError);
-        // If not scanning, show button
-        // so that user can restart cloud scanning
-        if (!mIsScanning)
-        {
-            if (GUI.Button(new Rect(100, 600, 200, 50), "Restart Scanning"))
-            {
-                // Reset Behaviour
-                mCloudRecoBehaviour.enabled = true;
-                mTargetMetadata = "";
-                m_Object.text = "";
-                GenerarPokes();
-            }
-        }
+        textoCanva.text = "¡Correcto! ¡Has Acertado!";
+
+        if (modeloActual != null) 
+            Destroy(modeloActual);
+
+        yield return StartCoroutine(GetAssetBundle(datos.url));
+
+        yield return new WaitForSeconds(4f);
+
+        textoCanva.text = "Adivinanza:\n\n" + datos.adivinanza;
+        siguienteRespuesta = datos.respuesta;
+
+        mCloudRecoBehaviour.ClearObservers();
+        mCloudRecoBehaviour.enabled = false;
+        yield return new WaitForSeconds(1f);
+        mCloudRecoBehaviour.enabled = true;
     }
+
+    IEnumerator FallarPrimera()
+    {
+        textoCanva.text = "¡Lamentablemente esta no es la primera imagen, prueba con otra pelicula!";
+
+        yield return new WaitForSeconds(2f);
+
+        mCloudRecoBehaviour.enabled = true;
+    }
+
+    IEnumerator Fallo()
+    {
+        vidas--;
+        vidasTexto.text = "Vidas: " + vidas;
+
+        textoCanva.text = "¡Has Fallado!";
+        yield return new WaitForSeconds(1.5f);
+
+        if(vidas <= 0)
+        {
+            textoCanva.text = "Game Over";
+            yield break;
+        }
+
+        textoCanva.text = "Intentalo de nuevo";
+        yield return new WaitForSeconds(1f);
+
+        mCloudRecoBehaviour.enabled = true;
+    }
+
+
+    
+
+    
 }

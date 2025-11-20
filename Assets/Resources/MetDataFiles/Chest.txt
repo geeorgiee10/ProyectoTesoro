@@ -1,4 +1,7 @@
 {
 	"nombre": "Piratas del Caribe",
-	"url": "https://drive.google.com/uc?export=download&id=1AoB7_EQ9dSXWGuB36w3cpwCAKIqDgbpM"
+	"url": "https://drive.google.com/uc?export=download&id=1AoB7_EQ9dSXWGuB36w3cpwCAKIqDgbpM",
+	"adivinanza": "¡ENHORABUENA! Has completado toda la mision y encontrado el tesoro perdido.",
+  	"respuesta": "",
+  	"esPrimera": false
 }

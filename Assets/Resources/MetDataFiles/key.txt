@@ -1,5 +1,7 @@
 {
 	"nombre": "Vengadores",
 	"url": "https://drive.google.com/uc?export=download&id=1MQc6xpcR6XGLwVNZ0wkm3YgU25gyFIIT",
-	"adivinanza": "En un castillo con magia y hechicería, un niño con cicatriz enfrenta su destino cada día"
+	"adivinanza": "En un castillo con magia y hechiceria, un chico con cicatriz enfrenta su destino cada dia",
+	"respuesta": "Harry Potter",
+	"esPrimera": true
 }

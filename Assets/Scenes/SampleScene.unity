@@ -826,7 +826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 10, y: -111}
+  m_AnchoredPosition: {x: 10, y: -165}
   m_SizeDelta: {x: 736.2971, y: 217.903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621686026
@@ -997,7 +997,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa23702e081509949adb249312051b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCloudRecoEventHandler
-  m_Object: {fileID: 1621686026}
+  textoCanva: {fileID: 1621686026}
+  vidasTexto: {fileID: 1964602099}
   ImageTargetTemplate: {fileID: 1024158346}
 --- !u!1 &1964602097
 GameObject:
