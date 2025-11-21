@@ -39,6 +39,8 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
     int vidas = 3;
 
     [SerializeField] private TextMeshProUGUI textoCanva;
+
+    [SerializeField] private TextMeshProUGUI debug;
     [SerializeField] private TextMeshProUGUI vidasTexto;
 
     public ImageTargetBehaviour ImageTargetTemplate;
@@ -100,31 +102,35 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
     IEnumerator GetAssetBundle(string url)
     {
+        debug.text = "Entrar get asset bunddle";
+
         UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url);
         yield return www.SendWebRequest();
 
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
+            debug.text = www.error;
         }
         else
         {
+            debug.text = "Entrado else";
             AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(www);
+            debug.text = "Descargado asset bundle";
             string[] allAssetNames = bundle.GetAllAssetNames();
+            debug.text = "Obtener todos asset bundle";
             string gameObjectName = Path.GetFileNameWithoutExtension(allAssetNames[0]).ToString();
+            debug.text = "Obtener nombre";
             GameObject objectFound = bundle.LoadAsset(gameObjectName) as GameObject;
-            
+            debug.text = "Objecto encontrado";
 
-            modeloActual = Instantiate(
-                objectFound, 
-                ImageTargetTemplate.transform
-            );
+            Instantiate(objectFound, new Vector3(0f, 0f, 0.05f), Quaternion.Euler(180f, 0f, 0f));
 
-            modeloActual.transform.localPosition = new Vector3(0f, 0f, 0.05f);
-
-            modeloActual.transform.localRotation = Quaternion.Euler(18f, 0f, 0f);
+            debug.text = "Modelo instanciado";
 
             modeloActual.transform.localScale = Vector3.one * 0.0005f;
+
+            debug.text = "Modelo cambiado de tamaño";
 
         }
     }
@@ -180,6 +186,8 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
             Destroy(modeloActual);
 
         yield return StartCoroutine(GetAssetBundle(datos.url));
+
+        debug.text = "Modelo puesto";
 
         yield return new WaitForSeconds(3f);
 
