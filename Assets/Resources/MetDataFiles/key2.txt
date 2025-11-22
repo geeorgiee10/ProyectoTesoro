@@ -1,6 +1,6 @@
 {
 	"nombre": "Harry Potter",
-	"url": "https://drive.google.com/uc?export=download&id=17Obv8bvVDyWlzz9P1sRxjYxFBd7UvS0Z",
+	"url": "https://drive.google.com/uc?export=download&id=1pTOZanCXs4aHCPu2_bT2im8Xz-6ZFE3y",
 	"adivinanza": "Un anillo poderoso que nadie debe poseer, y un hobbit valiente que lo debe traer",
 	"respuesta": "El Señor de los Anillos",
 	"esPrimera": false,

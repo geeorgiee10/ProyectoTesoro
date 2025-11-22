@@ -208,8 +208,16 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 1,
             "icon": null
@@ -223,8 +231,16 @@
           {
             "name": "GameObject",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 0,
             "icon": null
@@ -313,8 +329,16 @@
           {
             "name": "Material",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 0,
             "icon": null
@@ -322,8 +346,16 @@
           {
             "name": "Mesh",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 0,
             "icon": null
@@ -331,8 +363,16 @@
           {
             "name": "MeshFilter",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 0,
             "icon": null
@@ -340,8 +380,16 @@
           {
             "name": "MeshRenderer",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 0,
             "icon": null
@@ -373,8 +421,16 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 1,
             "icon": null
@@ -460,8 +516,16 @@
           {
             "name": "Shader",
             "scenes": [
+              "ardebugmenu",
               "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/SampleScene.unity",
+              "chest",
+              "cubo",
+              "key",
+              "key2",
+              "key3",
+              "key4",
+              "key5"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1016,7 +1080,16 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Scenes/MenuInicial.unity"
+              "Assets/Scenes/MenuInicial.unity",
+              "cubo"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "CapsuleCollider",
+            "scenes": [
+              "ardebugmenu"
             ],
             "dependencyType": 0,
             "icon": null

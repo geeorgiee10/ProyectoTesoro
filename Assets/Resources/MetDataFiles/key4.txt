@@ -1,6 +1,6 @@
 {
 	"nombre": "Star Wars",
-	"url": "https://drive.google.com/uc?export=download&id=1zqAQe-i63QwwxegwOUVjb925zVCKRebk",
+	"url": "https://drive.google.com/uc?export=download&id=1CKlQidfxr49PSilOflb1QW0nxnClQYSw",
 	"adivinanza": "Un general traicionado busca justicia en la arena, entre leones y aclamaciones, lucha por su honor y su venganza",
 	"respuesta": "Gladiator",
 	"esPrimera": false,

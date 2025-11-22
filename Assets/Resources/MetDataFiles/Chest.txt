@@ -1,6 +1,6 @@
 {
 	"nombre": "Piratas del Caribe",
-	"url": "https://drive.google.com/uc?export=download&id=1D_NrBoDtUVxsY7s5Y23X_oVO0Gy1Hl9D",
+	"url": "https://drive.google.com/uc?export=download&id=1RegXooD69dXVjlOIlH_ab7cmDL0yxudj",
 	"adivinanza": "",
   	"respuesta": "",
   	"esPrimera": false,

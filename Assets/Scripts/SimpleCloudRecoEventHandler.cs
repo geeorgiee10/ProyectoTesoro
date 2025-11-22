@@ -40,8 +40,8 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI textoCanva;
 
-    [SerializeField] private TextMeshProUGUI debug;
     [SerializeField] private TextMeshProUGUI vidasTexto;
+    [SerializeField] Transform modelPivot;
 
     public ImageTargetBehaviour ImageTargetTemplate;
 
@@ -102,35 +102,28 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
     IEnumerator GetAssetBundle(string url)
     {
-        debug.text = "Entrar get asset bunddle";
-
         UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url);
         yield return www.SendWebRequest();
 
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
-            debug.text = www.error;
         }
         else
         {
-            debug.text = "Entrado else";
             AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(www);
-            debug.text = "Descargado asset bundle";
             string[] allAssetNames = bundle.GetAllAssetNames();
-            debug.text = "Obtener todos asset bundle";
             string gameObjectName = Path.GetFileNameWithoutExtension(allAssetNames[0]).ToString();
-            debug.text = "Obtener nombre";
             GameObject objectFound = bundle.LoadAsset(gameObjectName) as GameObject;
-            debug.text = "Objecto encontrado";
 
-            Instantiate(objectFound, new Vector3(0f, 0f, 0.05f), Quaternion.Euler(180f, 0f, 0f));
+            modeloActual = Instantiate(objectFound, modelPivot);
 
-            debug.text = "Modelo instanciado";
 
-            modeloActual.transform.localScale = Vector3.one * 0.0005f;
+            modeloActual.transform.localPosition = new Vector3(0.05f, 0f, 0.05f);
 
-            debug.text = "Modelo cambiado de tamaño";
+            modeloActual.transform.localRotation = Quaternion.Euler(0f, 0f, -180f);
+            //modeloActual.transform.localScale = Vector3.one * 0.0005f;
+
 
         }
     }
@@ -144,15 +137,17 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         //mCloudRecoBehaviour.enabled = false;
 
-        if (ImageTargetTemplate != null)
-        {
-            /* Enable the new result with the same ImageTargetBehaviour: */
-            mCloudRecoBehaviour.EnableObservers(cloudRecoSearchResult, ImageTargetTemplate.gameObject);
-        }
+        var realTarget = mCloudRecoBehaviour.EnableObservers(cloudRecoSearchResult, ImageTargetTemplate.gameObject);
+
+        modelPivot.SetParent(realTarget.transform);
+        modelPivot.localPosition = Vector3.zero;
+        modelPivot.localRotation = Quaternion.identity;
+        modelPivot.localScale = Vector3.one;
 
         if(!juegoIniciado && datos.esPrimera)
         {
             juegoIniciado = true;
+            siguienteRespuesta = datos.respuesta;
             StartCoroutine(Acierto(datos));
             return;
         }
@@ -165,6 +160,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         if(datos.nombre == siguienteRespuesta)
         {
+            siguienteRespuesta = datos.respuesta;
             StartCoroutine(Acierto(datos));
             return;
         }
@@ -187,7 +183,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         yield return StartCoroutine(GetAssetBundle(datos.url));
 
-        debug.text = "Modelo puesto";
 
         yield return new WaitForSeconds(3f);
 
@@ -198,13 +193,12 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         }
 
         textoCanva.text = "Adivinanza:\n\n" + datos.adivinanza;
-        siguienteRespuesta = datos.respuesta;
 
 
-        mCloudRecoBehaviour.ClearObservers();
+        /*mCloudRecoBehaviour.ClearObservers();
         mCloudRecoBehaviour.enabled = false;
         yield return new WaitForSeconds(1f);
-        mCloudRecoBehaviour.enabled = true;
+        mCloudRecoBehaviour.enabled = true;*/
     }
 
     IEnumerator FallarPrimera()
