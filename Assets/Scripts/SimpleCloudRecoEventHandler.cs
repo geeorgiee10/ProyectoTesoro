@@ -102,6 +102,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
     IEnumerator GetAssetBundle(string url)
     {
+
         UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url);
         yield return www.SendWebRequest();
 
@@ -122,7 +123,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
             modeloActual.transform.localPosition = new Vector3(0.05f, 0f, 0.05f);
 
             modeloActual.transform.localRotation = Quaternion.Euler(0f, 0f, -180f);
-            //modeloActual.transform.localScale = Vector3.one * 0.0005f;
 
 
         }
@@ -137,9 +137,12 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         //mCloudRecoBehaviour.enabled = false;
 
-        var realTarget = mCloudRecoBehaviour.EnableObservers(cloudRecoSearchResult, ImageTargetTemplate.gameObject);
+         var newImageTarget = mCloudRecoBehaviour.EnableObservers(
+            cloudRecoSearchResult,
+            ImageTargetTemplate.gameObject
+        );
 
-        modelPivot.SetParent(realTarget.transform);
+        modelPivot.SetParent(newImageTarget.transform, false);
         modelPivot.localPosition = Vector3.zero;
         modelPivot.localRotation = Quaternion.identity;
         modelPivot.localScale = Vector3.one;
@@ -229,6 +232,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         mCloudRecoBehaviour.enabled = true;
     }
+    
 
 
     
