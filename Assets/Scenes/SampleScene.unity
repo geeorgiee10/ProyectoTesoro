@@ -1172,7 +1172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCloudRecoEventHandler
   textoCanva: {fileID: 1621686026}
-  debug: {fileID: 226762111}
   vidasTexto: {fileID: 1964602099}
   modelPivot: {fileID: 863138930}
   ImageTargetTemplate: {fileID: 1024158346}
