@@ -325,7 +325,6 @@ struct U3CTransicionSalirU3Ed__7_t0AFEEE56146CE419B330003AF049A7BA753754FA  : pu
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* ___U3CU3E4__this;
-	String_t* ___nombreEscena;
 	float ___U3CaU3E5__2;
 };
 struct TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C 
@@ -2036,12 +2035,11 @@ inline CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* Component_GetCompo
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CanvasGroup_set_blocksRaycasts_m6C17F35782D16AE3FC42FCD1A4D68E1C4A4776E0 (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transiciones_TransicionEntrar_m515F53CD3B5C705B69F513C2A3F8E5EC76F32A88 (Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transiciones_TransicionSalir_m6C4A5374FA2C3BF76EE176D567EBA8CD30DD04B2 (Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* __this, String_t* ___0_nombreEscena, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTransicionEntrarU3Ed__6__ctor_mE84DC1FBCECAE6C157D2FF908DB9E4FEF9E5A276 (U3CTransicionEntrarU3Ed__6_tFBA6070C4D2D1FC4F14B1F582F69DBC74A537773* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTransicionSalirU3Ed__7__ctor_m424CF66521F92F3B1F28610052162F38657921AF (U3CTransicionSalirU3Ed__7_t0AFEEE56146CE419B330003AF049A7BA753754FA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
@@ -2069,7 +2067,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB131
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:22>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:22>
 		String_t* L_0 = ___0_jsonString;
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_1;
 		L_1 = JsonUtility_FromJson_TisMetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683_m97E56C758BDFC8E16493F8804B94F7E2F408884B(L_0, JsonUtility_FromJson_TisMetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683_m97E56C758BDFC8E16493F8804B94F7E2F408884B_RuntimeMethod_var);
@@ -2103,11 +2101,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_Start_m5111B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:53>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:53>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___textoCanva;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, _stringLiteralD59C3D9D493A8856C000780869F2D90860665AAC);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:54>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:54>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_1 = __this->___vidasTexto;
 		int32_t* L_2 = (int32_t*)(&__this->___vidas);
 		String_t* L_3;
@@ -2116,7 +2114,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_Start_m5111B
 		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral943CD73BC7B00B9E2B91FF9ECC30674B1C2DC2FB, L_3, NULL);
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_1, L_4);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:55>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:55>
 		return;
 	}
 }
@@ -2140,42 +2138,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_Awake_mA2E99
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:60>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:60>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_0;
 		L_0 = Component_GetComponent_TisCloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777_m62BF584234A10D7EFCD69019F15CA5A52BCF1874(__this, Component_GetComponent_TisCloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777_m62BF584234A10D7EFCD69019F15CA5A52BCF1874_RuntimeMethod_var);
 		__this->___mCloudRecoBehaviour = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___mCloudRecoBehaviour), (void*)L_0);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:61>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:61>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_1 = __this->___mCloudRecoBehaviour;
 		Action_1_tBFF2F9CD8574F5BE0626C1C235918E0630FBBB91* L_2 = (Action_1_tBFF2F9CD8574F5BE0626C1C235918E0630FBBB91*)il2cpp_codegen_object_new(Action_1_tBFF2F9CD8574F5BE0626C1C235918E0630FBBB91_il2cpp_TypeInfo_var);
 		Action_1__ctor_mC51847B8CD3CD83F72BF054B77DBB468BCC98986(L_2, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnInitialized_mBE55DA2971C23279819826DCD26D80E29E8BABC5_RuntimeMethod_var), NULL);
 		NullCheck(L_1);
 		CloudRecoBehaviour_RegisterOnInitializedEventHandler_m1FF1F0DEC6DAD933B1F08F69E713B9B5DCE56BEE(L_1, L_2, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:62>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:62>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_3 = __this->___mCloudRecoBehaviour;
 		Action_1_t524C672EBFE8D3DDCFD2EB22207E9E1E352DF9EC* L_4 = (Action_1_t524C672EBFE8D3DDCFD2EB22207E9E1E352DF9EC*)il2cpp_codegen_object_new(Action_1_t524C672EBFE8D3DDCFD2EB22207E9E1E352DF9EC_il2cpp_TypeInfo_var);
 		Action_1__ctor_m96D5EA22B490AE9DBDB177BF4E7FDF9B9FD796A7(L_4, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnInitError_m73493B189B320058B60573874D1E7E6B7A3C4F3D_RuntimeMethod_var), NULL);
 		NullCheck(L_3);
 		CloudRecoBehaviour_RegisterOnInitErrorEventHandler_m1B1BF3FCCE932A31438EA281FF09B50726E5B258(L_3, L_4, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:63>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:63>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_5 = __this->___mCloudRecoBehaviour;
 		Action_1_t2E330B9E262A16BFCD0C9A6382144829E242808E* L_6 = (Action_1_t2E330B9E262A16BFCD0C9A6382144829E242808E*)il2cpp_codegen_object_new(Action_1_t2E330B9E262A16BFCD0C9A6382144829E242808E_il2cpp_TypeInfo_var);
 		Action_1__ctor_m7705345C7E4D377892000B5ECBE238EA6EE4A252(L_6, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnUpdateError_mCD27FA788213B1CD32F19F24B17F1275944DB2F3_RuntimeMethod_var), NULL);
 		NullCheck(L_5);
 		CloudRecoBehaviour_RegisterOnUpdateErrorEventHandler_m0E0C2769BA0690578AC1E422EB4ABD2F07C7AB10(L_5, L_6, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:64>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:64>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_7 = __this->___mCloudRecoBehaviour;
 		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_8 = (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*)il2cpp_codegen_object_new(Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
 		Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501(L_8, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnStateChanged_m8B8E8CEBE01DD0B7583DD5E38691E322DA1CC09F_RuntimeMethod_var), NULL);
 		NullCheck(L_7);
 		CloudRecoBehaviour_RegisterOnStateChangedEventHandler_mD617C992484BFD9B43F54D836DA4AA34FD6A4AEC(L_7, L_8, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:65>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:65>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_9 = __this->___mCloudRecoBehaviour;
 		Action_1_t01BA2483725D6122DDFED99A8697C001AFE4AE98* L_10 = (Action_1_t01BA2483725D6122DDFED99A8697C001AFE4AE98*)il2cpp_codegen_object_new(Action_1_t01BA2483725D6122DDFED99A8697C001AFE4AE98_il2cpp_TypeInfo_var);
 		Action_1__ctor_mD43A23947A9468C8062F471F7E737A271E9CECFF(L_10, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnNewSearchResult_m2B37B9240B7A89D97479E683DD73EF40F273F39F_RuntimeMethod_var), NULL);
 		NullCheck(L_9);
 		CloudRecoBehaviour_RegisterOnNewSearchResultEventHandler_m2333CCA636852D484910215E593096B4171C3AF9(L_9, L_10, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:66>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:66>
 		return;
 	}
 }
@@ -2198,42 +2196,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnDestroy_mD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:70>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:70>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_0 = __this->___mCloudRecoBehaviour;
 		Action_1_tBFF2F9CD8574F5BE0626C1C235918E0630FBBB91* L_1 = (Action_1_tBFF2F9CD8574F5BE0626C1C235918E0630FBBB91*)il2cpp_codegen_object_new(Action_1_tBFF2F9CD8574F5BE0626C1C235918E0630FBBB91_il2cpp_TypeInfo_var);
 		Action_1__ctor_mC51847B8CD3CD83F72BF054B77DBB468BCC98986(L_1, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnInitialized_mBE55DA2971C23279819826DCD26D80E29E8BABC5_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = CloudRecoBehaviour_UnregisterOnInitializedEventHandler_mF1E6ED88F60E62EDF9BD531DF3D4CD18A02E2C2C(L_0, L_1, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:71>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:71>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_3 = __this->___mCloudRecoBehaviour;
 		Action_1_t524C672EBFE8D3DDCFD2EB22207E9E1E352DF9EC* L_4 = (Action_1_t524C672EBFE8D3DDCFD2EB22207E9E1E352DF9EC*)il2cpp_codegen_object_new(Action_1_t524C672EBFE8D3DDCFD2EB22207E9E1E352DF9EC_il2cpp_TypeInfo_var);
 		Action_1__ctor_m96D5EA22B490AE9DBDB177BF4E7FDF9B9FD796A7(L_4, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnInitError_m73493B189B320058B60573874D1E7E6B7A3C4F3D_RuntimeMethod_var), NULL);
 		NullCheck(L_3);
 		bool L_5;
 		L_5 = CloudRecoBehaviour_UnregisterOnInitErrorEventHandler_m23FD7BF6C4C1D2F0B410C9FF5723967404945177(L_3, L_4, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:72>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:72>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_6 = __this->___mCloudRecoBehaviour;
 		Action_1_t2E330B9E262A16BFCD0C9A6382144829E242808E* L_7 = (Action_1_t2E330B9E262A16BFCD0C9A6382144829E242808E*)il2cpp_codegen_object_new(Action_1_t2E330B9E262A16BFCD0C9A6382144829E242808E_il2cpp_TypeInfo_var);
 		Action_1__ctor_m7705345C7E4D377892000B5ECBE238EA6EE4A252(L_7, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnUpdateError_mCD27FA788213B1CD32F19F24B17F1275944DB2F3_RuntimeMethod_var), NULL);
 		NullCheck(L_6);
 		bool L_8;
 		L_8 = CloudRecoBehaviour_UnregisterOnUpdateErrorEventHandler_m9A13FFD0728046124A90D243F0E0AE8A3C3AB6BB(L_6, L_7, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:73>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:73>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_9 = __this->___mCloudRecoBehaviour;
 		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_10 = (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*)il2cpp_codegen_object_new(Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
 		Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501(L_10, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnStateChanged_m8B8E8CEBE01DD0B7583DD5E38691E322DA1CC09F_RuntimeMethod_var), NULL);
 		NullCheck(L_9);
 		bool L_11;
 		L_11 = CloudRecoBehaviour_UnregisterOnStateChangedEventHandler_m6B9C7CFD8D41B28579DDA5E0B9DFFB6EC1CE3171(L_9, L_10, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:74>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:74>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_12 = __this->___mCloudRecoBehaviour;
 		Action_1_t01BA2483725D6122DDFED99A8697C001AFE4AE98* L_13 = (Action_1_t01BA2483725D6122DDFED99A8697C001AFE4AE98*)il2cpp_codegen_object_new(Action_1_t01BA2483725D6122DDFED99A8697C001AFE4AE98_il2cpp_TypeInfo_var);
 		Action_1__ctor_mD43A23947A9468C8062F471F7E737A271E9CECFF(L_13, __this, (intptr_t)((void*)SimpleCloudRecoEventHandler_OnNewSearchResult_m2B37B9240B7A89D97479E683DD73EF40F273F39F_RuntimeMethod_var), NULL);
 		NullCheck(L_12);
 		bool L_14;
 		L_14 = CloudRecoBehaviour_UnregisterOnNewSearchResultEventHandler_m19C143094FA894C8CF8029C09AA029057EED999C(L_12, L_13, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:75>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:75>
 		return;
 	}
 }
@@ -2248,10 +2246,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnInitialize
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:79>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:79>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral0C019E50CFD585AD0FE512F967393591B4259595, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:80>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:80>
 		return;
 	}
 }
@@ -2267,7 +2265,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnInitError_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:84>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:84>
 		Il2CppFakeBox<int32_t> L_0(InitError_tC04517E3DB17E87FEB08460A1ADB5DEE0F6FDF12_il2cpp_TypeInfo_var, (&___0_initError));
 		String_t* L_1;
 		L_1 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_0), NULL);
@@ -2275,7 +2273,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnInitError_
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral45FAB8C2D6F34E46A937913FE9F311EEEC1C19B4, L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:85>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:85>
 		return;
 	}
 }
@@ -2291,7 +2289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnUpdateErro
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:89>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:89>
 		Il2CppFakeBox<int32_t> L_0(QueryError_tEB494FF968665E22017781DF3E77DEE063DBFBA3_il2cpp_TypeInfo_var, (&___0_updateError));
 		String_t* L_1;
 		L_1 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_0), NULL);
@@ -2299,7 +2297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnUpdateErro
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral8463240B597E14A568ACA7C91222CE26EF0DB88C, L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:91>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:91>
 		return;
 	}
 }
@@ -2307,12 +2305,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnUpdateErro
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnStateChanged_m8B8E8CEBE01DD0B7583DD5E38691E322DA1CC09F (SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* __this, bool ___0_scanning, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:95>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:95>
 		bool L_0 = ___0_scanning;
 		__this->___mIsScanning = L_0;
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:97>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:97>
 		bool L_1 = ___0_scanning;
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:101>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:101>
 		return;
 	}
 }
@@ -2346,17 +2344,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnNewSearchR
 	MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* V_0 = NULL;
 	ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* V_1 = NULL;
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:136>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:136>
 		CloudRecoSearchResult_tE583336F5452284FC4BA3A1B192007DE7DCCB42E* L_0 = ___0_cloudRecoSearchResult;
 		NullCheck(L_0);
 		String_t* L_1 = L_0->___MetaData;
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_2;
 		L_2 = MetaDatos_CreateFromJSON_mC5700A7747283FBEB9755BBD25F1A65358533264(L_1, NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:140>
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:141>
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:142>
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:143>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:140>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:141>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:142>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:143>
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_3 = __this->___mCloudRecoBehaviour;
 		CloudRecoSearchResult_tE583336F5452284FC4BA3A1B192007DE7DCCB42E* L_4 = ___0_cloudRecoSearchResult;
 		ImageTargetBehaviour_t014481FC6A8B819C2BCE7922BA6BD53E1B23F120* L_5 = __this->___ImageTargetTemplate;
@@ -2367,7 +2365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnNewSearchR
 		ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* L_7;
 		L_7 = CloudRecoBehaviour_EnableObservers_m0F8C911F85DC9175EC115AD024F3B2C9A1C45220(L_3, L_4, L_6, NULL);
 		V_1 = L_7;
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:145>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:145>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___modelPivot;
 		ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* L_9 = V_1;
 		NullCheck(L_9);
@@ -2375,25 +2373,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnNewSearchR
 		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_9, NULL);
 		NullCheck(L_8);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_8, L_10, (bool)0, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:146>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:146>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___modelPivot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_11);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_11, L_12, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:147>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:147>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = __this->___modelPivot;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_14;
 		L_14 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_13);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_13, L_14, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:148>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:148>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___modelPivot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
 		NullCheck(L_15);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_15, L_16, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:150>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:150>
 		bool L_17 = __this->___juegoIniciado;
 		if (L_17)
 		{
@@ -2410,27 +2408,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler_OnNewSearchR
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:152>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:152>
 		__this->___juegoIniciado = (bool)1;
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:153>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:153>
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_20 = V_0;
 		NullCheck(L_20);
 		String_t* L_21 = L_20->___respuesta;
 		__this->___siguienteRespuesta = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___siguienteRespuesta), (void*)L_21);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:154>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:154>
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_22 = V_0;
 		RuntimeObject* L_23;
 		L_23 = SimpleCloudRecoEventHandler_Acierto_m440A5A4353F7174ED1B755B791700975EC76C2D7(__this, L_22, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_24;
 		L_24 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_23, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:155>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:155>
 		return;
 	}
 
 IL_0098:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:158>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:158>
 		bool L_25 = __this->___juegoIniciado;
 		if (L_25)
 		{
@@ -2447,18 +2445,18 @@ IL_0098:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:160>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:160>
 		RuntimeObject* L_28;
 		L_28 = SimpleCloudRecoEventHandler_FallarPrimera_mEA29622B1D70554B0D081489317B527EC625DAFE(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_29;
 		L_29 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_28, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:161>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:161>
 		return;
 	}
 
 IL_00b6:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:164>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:164>
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_30 = V_0;
 		NullCheck(L_30);
 		String_t* L_31 = L_30->___nombre;
@@ -2471,30 +2469,30 @@ IL_00b6:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:166>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:166>
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_34 = V_0;
 		NullCheck(L_34);
 		String_t* L_35 = L_34->___respuesta;
 		__this->___siguienteRespuesta = L_35;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___siguienteRespuesta), (void*)L_35);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:167>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:167>
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_36 = V_0;
 		RuntimeObject* L_37;
 		L_37 = SimpleCloudRecoEventHandler_Acierto_m440A5A4353F7174ED1B755B791700975EC76C2D7(__this, L_36, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_38;
 		L_38 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_37, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:168>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:168>
 		return;
 	}
 
 IL_00e4:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:172>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:172>
 		RuntimeObject* L_39;
 		L_39 = SimpleCloudRecoEventHandler_Fallo_mE9E4314E33BCF4D194FD8934983BA07184CB1605(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_40;
 		L_40 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_39, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:173>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:173>
 		return;
 	}
 }
@@ -2570,10 +2568,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleCloudRecoEventHandler__ctor_m0D12E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:34>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:34>
 		__this->___siguienteRespuesta = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___siguienteRespuesta), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:39>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:39>
 		__this->___vidas = 3;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -2648,13 +2646,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAciertoU3Ed__19_MoveNext_mA9BF8E366D1
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:182>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:182>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_3 = V_1;
 		NullCheck(L_3);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_4 = L_3->___textoCanva;
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, _stringLiteral1E948FDA92E614FED49C93C3EB4CE44CA9823E9F);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:184>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:184>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_5 = V_1;
 		NullCheck(L_5);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = L_5->___modeloActual;
@@ -2667,7 +2665,7 @@ IL_0022:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:185>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:185>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_8 = V_1;
 		NullCheck(L_8);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8->___modeloActual;
@@ -2677,7 +2675,7 @@ IL_0022:
 
 IL_0052:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:187>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:187>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_10 = V_1;
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_11 = V_1;
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_12 = __this->___datos;
@@ -2698,7 +2696,7 @@ IL_0052:
 IL_0078:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:190>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:190>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_16 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_16, (3.0f), NULL);
 		__this->___U3CU3E2__current = L_16;
@@ -2710,7 +2708,7 @@ IL_0078:
 IL_0098:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:192>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:192>
 		MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* L_17 = __this->___datos;
 		NullCheck(L_17);
 		bool L_18 = L_17->___esUltima;
@@ -2720,19 +2718,19 @@ IL_0098:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:194>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:194>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_19 = V_1;
 		NullCheck(L_19);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_20 = L_19->___textoCanva;
 		NullCheck(L_20);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_20, _stringLiteral33A46A0E444880336C5B52C9B74A8165371BE16B);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:195>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:195>
 		return (bool)0;
 	}
 
 IL_00be:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:198>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:198>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_21 = V_1;
 		NullCheck(L_21);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_22 = L_21->___textoCanva;
@@ -2743,7 +2741,7 @@ IL_00be:
 		L_25 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral827BB95729A6E3C6285B3723EE01AC01421CF603, L_24, NULL);
 		NullCheck(L_22);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_22, L_25);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:205>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:205>
 		return (bool)0;
 	}
 }
@@ -2834,13 +2832,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFallarPrimeraU3Ed__20_MoveNext_mA0D2E
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:209>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:209>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_4 = V_1;
 		NullCheck(L_4);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = L_4->___textoCanva;
 		NullCheck(L_5);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_5, _stringLiteralB7A68F0F1032FD621D6CE0FBB4C4214E555D3D44);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:211>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:211>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_6 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_6, (2.0f), NULL);
 		__this->___U3CU3E2__current = L_6;
@@ -2852,13 +2850,13 @@ IL_0017:
 IL_0047:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:213>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:213>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_7 = V_1;
 		NullCheck(L_7);
 		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_8 = L_7->___mCloudRecoBehaviour;
 		NullCheck(L_8);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_8, (bool)1, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:214>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:214>
 		return (bool)0;
 	}
 }
@@ -2918,6 +2916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFalloU3Ed__21_MoveNext_m2D5689F91BB10
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral080D3963AE5C996E3F88D1945E02F81EAAF990F0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2FDE1D2100149951B47E2563A2E378ACB2519658);
@@ -2945,7 +2944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFalloU3Ed__21_MoveNext_m2D5689F91BB10
 			}
 			case 2:
 			{
-				goto IL_00cb;
+				goto IL_00d7;
 			}
 		}
 	}
@@ -2956,14 +2955,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFalloU3Ed__21_MoveNext_m2D5689F91BB10
 IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:218>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:218>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_3 = V_1;
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_4 = V_1;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___vidas;
 		NullCheck(L_3);
 		L_3->___vidas = ((int32_t)il2cpp_codegen_subtract(L_5, 1));
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:219>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:219>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_6 = V_1;
 		NullCheck(L_6);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = L_6->___vidasTexto;
@@ -2976,13 +2975,13 @@ IL_0022:
 		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral943CD73BC7B00B9E2B91FF9ECC30674B1C2DC2FB, L_10, NULL);
 		NullCheck(L_7);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, L_11);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:221>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:221>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_12 = V_1;
 		NullCheck(L_12);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_13 = L_12->___textoCanva;
 		NullCheck(L_13);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_13, _stringLiteral080D3963AE5C996E3F88D1945E02F81EAAF990F0);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:222>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:222>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_14 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_14, (1.5f), NULL);
 		__this->___U3CU3E2__current = L_14;
@@ -2994,53 +2993,87 @@ IL_0022:
 IL_0080:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:224>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:224>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_15 = V_1;
 		NullCheck(L_15);
 		int32_t L_16 = L_15->___vidas;
 		if ((((int32_t)L_16) > ((int32_t)0)))
 		{
-			goto IL_00a2;
+			goto IL_00ae;
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:226>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:226>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_17 = V_1;
 		NullCheck(L_17);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_18 = L_17->___textoCanva;
 		NullCheck(L_18);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_18, _stringLiteralF984C9674EDCA2C39EFAD66081B054F073C3815B);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:227>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:227>
+		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_19 = V_1;
+		NullCheck(L_19);
+		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_20 = L_19->___mCloudRecoBehaviour;
+		NullCheck(L_20);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_20, (bool)0, NULL);
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:228>
 		return (bool)0;
 	}
 
-IL_00a2:
+IL_00ae:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:230>
-		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_19 = V_1;
-		NullCheck(L_19);
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_20 = L_19->___textoCanva;
-		NullCheck(L_20);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_20, _stringLiteral2FDE1D2100149951B47E2563A2E378ACB2519658);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:231>
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_21 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_21, (1.0f), NULL);
-		__this->___U3CU3E2__current = L_21;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_21);
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:231>
+		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_21 = V_1;
+		NullCheck(L_21);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_22 = L_21->___textoCanva;
+		NullCheck(L_22);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_22, _stringLiteral2FDE1D2100149951B47E2563A2E378ACB2519658);
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:232>
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_23 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_23, (1.0f), NULL);
+		__this->___U3CU3E2__current = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_23);
 		__this->___U3CU3E1__state = 2;
 		return (bool)1;
 	}
 
-IL_00cb:
+IL_00d7:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:233>
-		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_22 = V_1;
-		NullCheck(L_22);
-		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_23 = L_22->___mCloudRecoBehaviour;
-		NullCheck(L_23);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_23, (bool)1, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:234>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:234>
+		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_24 = V_1;
+		NullCheck(L_24);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = L_24->___modeloActual;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_26;
+		L_26 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_25, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_26)
+		{
+			goto IL_00fe;
+		}
+	}
+	{
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:236>
+		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_27 = V_1;
+		NullCheck(L_27);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = L_27->___modeloActual;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_28, NULL);
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:237>
+		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_29 = V_1;
+		NullCheck(L_29);
+		L_29->___modeloActual = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_29->___modeloActual), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
+	}
+
+IL_00fe:
+	{
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:241>
+		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_30 = V_1;
+		NullCheck(L_30);
+		CloudRecoBehaviour_tC7D7B2DFEAC8ACC756340E676F607A46496D1777* L_31 = L_30->___mCloudRecoBehaviour;
+		NullCheck(L_31);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_31, (bool)1, NULL);
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:242>
 		return (bool)0;
 	}
 }
@@ -3136,13 +3169,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CGetAssetBundleU3Ed__17_MoveNext_m4FEE
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:106>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:106>
 		String_t* L_4 = __this->___url;
 		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_5;
 		L_5 = UnityWebRequestAssetBundle_GetAssetBundle_mA08565578A5E7A07140D4C6327FD9B51E14D99F9(L_4, NULL);
 		__this->___U3CwwwU3E5__2 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwwwU3E5__2), (void*)L_5);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:107>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:107>
 		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_6 = __this->___U3CwwwU3E5__2;
 		NullCheck(L_6);
 		UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_7;
@@ -3156,7 +3189,7 @@ IL_0017:
 IL_0049:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:109>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:109>
 		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_8 = __this->___U3CwwwU3E5__2;
 		NullCheck(L_8);
 		int32_t L_9;
@@ -3167,7 +3200,7 @@ IL_0049:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:111>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:111>
 		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_10 = __this->___U3CwwwU3E5__2;
 		NullCheck(L_10);
 		String_t* L_11;
@@ -3179,16 +3212,16 @@ IL_0049:
 
 IL_0073:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:115>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:115>
 		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_12 = __this->___U3CwwwU3E5__2;
 		AssetBundle_tB38418819A49060CD738CB21541649340F082943* L_13;
 		L_13 = DownloadHandlerAssetBundle_GetContent_m9E279B7987A8ADAB0D0B441BAB8C5A61C7DEB7C4(L_12, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:116>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:116>
 		AssetBundle_tB38418819A49060CD738CB21541649340F082943* L_14 = L_13;
 		NullCheck(L_14);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15;
 		L_15 = AssetBundle_GetAllAssetNames_m44504DB9E055412F0DF2071A769A243219708CC3(L_14, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:117>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:117>
 		NullCheck(L_15);
 		int32_t L_16 = 0;
 		String_t* L_17 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
@@ -3199,13 +3232,13 @@ IL_0073:
 		String_t* L_19;
 		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_18);
 		V_2 = L_19;
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:118>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:118>
 		String_t* L_20 = V_2;
 		NullCheck(L_14);
 		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_21;
 		L_21 = AssetBundle_LoadAsset_m25926A405F3AB79A4DF2447F23A09957EC7F063E(L_14, L_20, NULL);
 		V_3 = ((GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)IsInstSealed((RuntimeObject*)L_21, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:120>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:120>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_22 = V_1;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = V_3;
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_24 = V_1;
@@ -3217,7 +3250,7 @@ IL_0073:
 		NullCheck(L_22);
 		L_22->___modeloActual = L_26;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___modeloActual), (void*)L_26);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:123>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:123>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_27 = V_1;
 		NullCheck(L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = L_27->___modeloActual;
@@ -3229,7 +3262,7 @@ IL_0073:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_30), (0.0500000007f), (0.0f), (0.0500000007f), NULL);
 		NullCheck(L_29);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_29, L_30, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:125>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:125>
 		SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* L_31 = V_1;
 		NullCheck(L_31);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = L_31->___modeloActual;
@@ -3244,7 +3277,7 @@ IL_0073:
 
 IL_00f7:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:129>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/SimpleCloudRecoEventHandler.cs:129>
 		return (bool)0;
 	}
 }
@@ -3291,14 +3324,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transiciones_Awake_m35F4C82BDAA804DE2AD9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:14>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:14>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_0 = __this->___imageTransicion;
 		NullCheck(L_0);
 		CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* L_1;
 		L_1 = Component_GetComponent_TisCanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094_mA3B0428368982ED39ADEBB220EE67D1E99D8B2D2(L_0, Component_GetComponent_TisCanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094_mA3B0428368982ED39ADEBB220EE67D1E99D8B2D2_RuntimeMethod_var);
 		__this->___canvasGroup = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___canvasGroup), (void*)L_1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:15>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:15>
 		return;
 	}
 }
@@ -3306,30 +3339,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transiciones_Awake_m35F4C82BDAA804DE2AD9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transiciones_Start_mF1FDA43753BFD78D380508EF6C91D6B705B5A21F (Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:19>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:19>
 		CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* L_0 = __this->___canvasGroup;
 		NullCheck(L_0);
 		CanvasGroup_set_blocksRaycasts_m6C17F35782D16AE3FC42FCD1A4D68E1C4A4776E0(L_0, (bool)0, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:20>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:20>
 		RuntimeObject* L_1;
 		L_1 = Transiciones_TransicionEntrar_m515F53CD3B5C705B69F513C2A3F8E5EC76F32A88(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
 		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:21>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:21>
 		return;
 	}
 }
 // Method Definition Index: 112456
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transiciones_CambiarEscena_m037D9615E9B3222423C62EDBD66F1F7BC9B28DB4 (Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* __this, String_t* ___0_nombreEscena, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:25>
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:26>
 		String_t* L_0 = ___0_nombreEscena;
-		RuntimeObject* L_1;
-		L_1 = Transiciones_TransicionSalir_m6C4A5374FA2C3BF76EE176D567EBA8CD30DD04B2(__this, L_0, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
-		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:26>
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_0, NULL);
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:27>
 		return;
 	}
 }
@@ -3368,19 +3405,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transiciones_TransicionSalir_m
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CTransicionSalirU3Ed__7_t0AFEEE56146CE419B330003AF049A7BA753754FA* L_2 = L_1;
-		String_t* L_3 = ___0_nombreEscena;
-		NullCheck(L_2);
-		L_2->___nombreEscena = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&L_2->___nombreEscena), (void*)L_3);
-		return L_2;
+		return L_1;
 	}
 }
 // Method Definition Index: 112459
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transiciones__ctor_m26AA09821FE5BBCC42A55F124C126AF33ABF5828 (Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:9>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:9>
 		__this->___velocidadTransicion = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -3441,14 +3473,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTransicionEntrarU3Ed__6_MoveNext_m15E
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:30>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:31>
 		__this->___U3CaU3E5__2 = (1.0f);
 		goto IL_0080;
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:33>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:34>
 		float L_4 = __this->___U3CaU3E5__2;
 		float L_5;
 		L_5 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
@@ -3456,7 +3488,7 @@ IL_002b:
 		NullCheck(L_6);
 		float L_7 = L_6->___velocidadTransicion;
 		__this->___U3CaU3E5__2 = ((float)il2cpp_codegen_subtract(L_4, ((float)il2cpp_codegen_multiply(L_5, L_7))));
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:34>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:35>
 		Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* L_8 = V_1;
 		NullCheck(L_8);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_9 = L_8->___imageTransicion;
@@ -3466,7 +3498,7 @@ IL_002b:
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_11), (0.0f), (0.0f), (0.0f), L_10, NULL);
 		NullCheck(L_9);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_9, L_11);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:35>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:36>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -3480,7 +3512,7 @@ IL_0079:
 
 IL_0080:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:31>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:32>
 		float L_12 = __this->___U3CaU3E5__2;
 		if ((((float)L_12) > ((float)(0.0f))))
 		{
@@ -3488,13 +3520,13 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:37>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:38>
 		Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* L_13 = V_1;
 		NullCheck(L_13);
 		CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* L_14 = L_13->___canvasGroup;
 		NullCheck(L_14);
 		CanvasGroup_set_blocksRaycasts_m6C17F35782D16AE3FC42FCD1A4D68E1C4A4776E0(L_14, (bool)0, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:38>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:39>
 		return (bool)0;
 	}
 }
@@ -3551,12 +3583,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTransicionSalirU3Ed__7_System_IDispos
 // Method Definition Index: 112468
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTransicionSalirU3Ed__7_MoveNext_mA2168FB20360882EB4CE6115004C97E8E71DD0ED (U3CTransicionSalirU3Ed__7_t0AFEEE56146CE419B330003AF049A7BA753754FA* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	int32_t V_0 = 0;
 	Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* V_1 = NULL;
 	{
@@ -3584,20 +3610,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTransicionSalirU3Ed__7_MoveNext_mA216
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:42>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:43>
 		Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* L_4 = V_1;
 		NullCheck(L_4);
 		CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* L_5 = L_4->___canvasGroup;
 		NullCheck(L_5);
 		CanvasGroup_set_blocksRaycasts_m6C17F35782D16AE3FC42FCD1A4D68E1C4A4776E0(L_5, (bool)1, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:43>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:44>
 		__this->___U3CaU3E5__2 = (0.0f);
 		goto IL_008c;
 	}
 
 IL_0037:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:46>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:47>
 		float L_6 = __this->___U3CaU3E5__2;
 		float L_7;
 		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
@@ -3605,7 +3631,7 @@ IL_0037:
 		NullCheck(L_8);
 		float L_9 = L_8->___velocidadTransicion;
 		__this->___U3CaU3E5__2 = ((float)il2cpp_codegen_add(L_6, ((float)il2cpp_codegen_multiply(L_7, L_9))));
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:47>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:48>
 		Transiciones_t00526B6830A379689AF93A1C84CB88A41D40A95E* L_10 = V_1;
 		NullCheck(L_10);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_11 = L_10->___imageTransicion;
@@ -3615,7 +3641,7 @@ IL_0037:
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_13), (0.0f), (0.0f), (0.0f), L_12, NULL);
 		NullCheck(L_11);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_11, L_13);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:48>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:49>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -3629,7 +3655,7 @@ IL_0085:
 
 IL_008c:
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:44>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:45>
 		float L_14 = __this->___U3CaU3E5__2;
 		if ((((float)L_14) < ((float)(1.0f))))
 		{
@@ -3637,11 +3663,7 @@ IL_008c:
 		}
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:50>
-		String_t* L_15 = __this->___nombreEscena;
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_15, NULL);
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/Scripts/Transiciones.cs:51>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/Scripts/Transiciones.cs:52>
 		return (bool)0;
 	}
 }
@@ -3720,7 +3742,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* VuforiaLicense_GetLicenseKey_m796D5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/jorge/Documents/Master FP Videojuegos/Proyectos/Tesoro/ProyectoTesoro/Assets/VuforiaLicense.cs:12>
+		//<source_info:C:/Users/Jorge/Documents/Games/ProyectoTesoro/Assets/VuforiaLicense.cs:12>
 		return _stringLiteralC9C8A682AECC75756E55954B2B768BB3BA78370B;
 	}
 }

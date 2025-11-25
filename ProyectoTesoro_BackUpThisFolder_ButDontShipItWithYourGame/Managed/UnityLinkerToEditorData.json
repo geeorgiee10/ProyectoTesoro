@@ -19,6 +19,7 @@
           {
             "name": "NavMeshSettings",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -83,6 +84,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -100,6 +102,7 @@
           {
             "name": "AudioListener",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -166,6 +169,7 @@
           {
             "name": "Camera",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -187,6 +191,7 @@
           {
             "name": "Cubemap",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -208,6 +213,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -223,6 +229,7 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -256,6 +263,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -265,6 +273,7 @@
           {
             "name": "Light",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -292,6 +301,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -313,6 +323,7 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -349,6 +360,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -364,6 +376,7 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -373,6 +386,7 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -412,6 +426,7 @@
           {
             "name": "RectTransform",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -427,6 +442,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -460,6 +476,7 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -487,6 +504,7 @@
           {
             "name": "Sprite",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity"
             ],
             "dependencyType": 0,
@@ -1454,8 +1472,8 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/MenuInicial.unity",
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/Informacion.unity",
+              "Assets/Scenes/MenuInicial.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1498,6 +1516,7 @@
           {
             "name": "Canvas",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],
@@ -1507,6 +1526,7 @@
           {
             "name": "CanvasGroup",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity"
             ],
             "dependencyType": 0,
@@ -1515,6 +1535,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
+              "Assets/Scenes/Informacion.unity",
               "Assets/Scenes/MenuInicial.unity",
               "Assets/Scenes/SampleScene.unity"
             ],

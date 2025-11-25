@@ -22,7 +22,8 @@ public class Transiciones : MonoBehaviour
 
     public void CambiarEscena(string nombreEscena)
     {
-        StartCoroutine(TransicionSalir(nombreEscena));
+        //StartCoroutine(TransicionSalir(nombreEscena));
+        SceneManager.LoadScene(nombreEscena);
     }
 
     IEnumerator TransicionEntrar()
@@ -47,6 +48,6 @@ public class Transiciones : MonoBehaviour
             imageTransicion.color = new Color(0, 0, 0, a);
             yield return null;
         }
-        SceneManager.LoadScene(nombreEscena);
+        
     }
 }

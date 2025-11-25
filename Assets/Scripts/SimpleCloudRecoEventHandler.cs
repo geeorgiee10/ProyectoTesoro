@@ -198,8 +198,8 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         textoCanva.text = "Adivinanza:\n\n" + datos.adivinanza;
 
 
-        /*mCloudRecoBehaviour.ClearObservers();
-        mCloudRecoBehaviour.enabled = false;
+        //mCloudRecoBehaviour.ClearObservers();
+        /*mCloudRecoBehaviour.enabled = false;
         yield return new WaitForSeconds(1f);
         mCloudRecoBehaviour.enabled = true;*/
     }
@@ -224,12 +224,20 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         if(vidas <= 0)
         {
             textoCanva.text = "Game Over";
+            mCloudRecoBehaviour.enabled = false;
             yield break;
         }
 
         textoCanva.text = "Intentalo de nuevo";
         yield return new WaitForSeconds(1f);
 
+        if (modeloActual != null)
+        {
+            Destroy(modeloActual);
+            modeloActual = null;
+        }
+
+        //mCloudRecoBehaviour.ClearObservers();
         mCloudRecoBehaviour.enabled = true;
     }
     
