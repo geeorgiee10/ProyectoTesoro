@@ -426,7 +426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* IntPtr_op_Explicit_m2728CBA081E79B97DDC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 112524
+// Method Definition Index: 112526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* UnityWebRequestAssetBundle_GetAssetBundle_mA08565578A5E7A07140D4C6327FD9B51E14D99F9 (String_t* ___0_uri, const RuntimeMethod* method) 
 {
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* V_0 = NULL;
@@ -444,7 +444,7 @@ IL_000b:
 		return L_2;
 	}
 }
-// Method Definition Index: 112525
+// Method Definition Index: 112527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* UnityWebRequestAssetBundle_GetAssetBundle_m1701951B58D909D4FE4C62B86F4BF86C101DAB6B (String_t* ___0_uri, uint32_t ___1_crc, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -513,7 +513,7 @@ IL2CPP_EXTERN_C void DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD
 IL2CPP_EXTERN_C void DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C_marshal_com_cleanup(DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 112526
+// Method Definition Index: 112528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DownloadHandlerAssetBundle_Create_mAE1EAD7D5059AB28C1271055B8010DC7121E61C6 (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* ___0_obj, String_t* ___1_url, uint32_t ___2_crc, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -592,7 +592,7 @@ IL_003a:
 		return L_10;
 	}
 }
-// Method Definition Index: 112527
+// Method Definition Index: 112529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DownloadHandlerAssetBundle_InternalCreateAssetBundle_m563CE0AFADE34C6EC1DDFE3B548880E0194968B0 (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* __this, String_t* ___0_url, uint32_t ___1_crc, const RuntimeMethod* method) 
 {
 	{
@@ -604,7 +604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DownloadHandlerAssetBundle_InternalCreat
 		return;
 	}
 }
-// Method Definition Index: 112528
+// Method Definition Index: 112530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DownloadHandlerAssetBundle__ctor_m48C37228D1A7F6B0CE2E3D1B65F49FE34DA4069F (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* __this, String_t* ___0_url, uint32_t ___1_crc, const RuntimeMethod* method) 
 {
 	{
@@ -615,7 +615,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DownloadHandlerAssetBundle__ctor_m48C372
 		return;
 	}
 }
-// Method Definition Index: 112529
+// Method Definition Index: 112531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* DownloadHandlerAssetBundle_GetData_m31E29D90C0EA4ACAF65EB86F423464FC46717B25 (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -624,7 +624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DownloadHandlerAssetBundle_GetData_m31E29D90C0EA4ACAF65EB86F423464FC46717B25_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 112530
+// Method Definition Index: 112532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetBundle_tB38418819A49060CD738CB21541649340F082943* DownloadHandlerAssetBundle_get_assetBundle_m9D07F738F7014C26AF2B7FD89132FD1CB5DDE0FE (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -662,7 +662,7 @@ IL_000f:
 		return L_3;
 	}
 }
-// Method Definition Index: 112531
+// Method Definition Index: 112533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetBundle_tB38418819A49060CD738CB21541649340F082943* DownloadHandlerAssetBundle_GetContent_m9E279B7987A8ADAB0D0B441BAB8C5A61C7DEB7C4 (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___0_www, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -689,7 +689,7 @@ IL_000f:
 		return L_3;
 	}
 }
-// Method Definition Index: 112532
+// Method Definition Index: 112534
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DownloadHandlerAssetBundle_Create_Injected_m88D1234D91CBF580789F293D512C9D1DEB5228E4 (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* ___0_obj, ManagedSpanWrapper_tE7FC4BBB631B130757F8DEB15853D98FD3D5DC0E* ___1_url, uint32_t ___2_crc, const RuntimeMethod* method) 
 {
 	typedef intptr_t (*DownloadHandlerAssetBundle_Create_Injected_m88D1234D91CBF580789F293D512C9D1DEB5228E4_ftn) (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C*, ManagedSpanWrapper_tE7FC4BBB631B130757F8DEB15853D98FD3D5DC0E*, uint32_t);
@@ -699,7 +699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DownloadHandlerAssetBundle_Create_In
 	intptr_t icallRetVal = _il2cpp_icall_func(___0_obj, ___1_url, ___2_crc);
 	return icallRetVal;
 }
-// Method Definition Index: 112533
+// Method Definition Index: 112535
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DownloadHandlerAssetBundle_get_assetBundle_Injected_mD80D9EA62E870B36DA6F9709DF189C8D79267B9D (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {
 	typedef intptr_t (*DownloadHandlerAssetBundle_get_assetBundle_Injected_mD80D9EA62E870B36DA6F9709DF189C8D79267B9D_ftn) (intptr_t);
@@ -717,7 +717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DownloadHandlerAssetBundle_get_asset
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 112534
+// Method Definition Index: 112536
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t BindingsMarshaller_ConvertToNative_m66DFFF1E86DCA6AF5E1BA34DB5AF24F65B8E903C (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* ___0_handler, const RuntimeMethod* method) 
 {
 	{
@@ -831,7 +831,7 @@ IL_000d:
 		return L_6;
 	}
 }
-// Method Definition Index: 112534
+// Method Definition Index: 112536
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t BindingsMarshaller_ConvertToNative_m66DFFF1E86DCA6AF5E1BA34DB5AF24F65B8E903C_inline (DownloadHandlerAssetBundle_tCD9D8BA067912469251677D16DFCADD13CAD510C* ___0_handler, const RuntimeMethod* method) 
 {
 	{

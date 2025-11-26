@@ -34,8 +34,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
     string siguienteRespuesta = "";
     bool juegoIniciado = false;
 
-
-
     int vidas = 3;
 
     [SerializeField] private TextMeshProUGUI textoCanva;
@@ -46,6 +44,11 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
     public ImageTargetBehaviour ImageTargetTemplate;
 
     GameObject modeloActual;
+
+
+
+    string mTargetMetadata = "";
+    string mTargetMetadataText = "";
 
 
     void Start()
@@ -147,6 +150,9 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         modelPivot.localRotation = Quaternion.identity;
         modelPivot.localScale = Vector3.one;
 
+        mTargetMetadata = datos.nombre;
+        mTargetMetadataText = datos.adivinanza;
+
         if(!juegoIniciado && datos.esPrimera)
         {
             juegoIniciado = true;
@@ -198,7 +204,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         textoCanva.text = "Adivinanza:\n\n" + datos.adivinanza;
 
 
-        //mCloudRecoBehaviour.ClearObservers();
         /*mCloudRecoBehaviour.enabled = false;
         yield return new WaitForSeconds(1f);
         mCloudRecoBehaviour.enabled = true;*/
@@ -231,14 +236,27 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         textoCanva.text = "Intentalo de nuevo";
         yield return new WaitForSeconds(1f);
 
-        if (modeloActual != null)
-        {
-            Destroy(modeloActual);
-            modeloActual = null;
-        }
+        
 
-        //mCloudRecoBehaviour.ClearObservers();
         mCloudRecoBehaviour.enabled = true;
+    }
+
+
+    void OnGUI() {
+        // Display current 'scanning' status
+        GUI.Box (new Rect(100,100,200,50), mIsScanning ? "Scanning" : "Not scanning");
+        // Display metadata of latest detected cloud-target
+        GUI.Box(new Rect(100, 200, 200, 50), "Metadata: " + mTargetMetadata);
+        GUI.Box (new Rect(100,300,200,50), "Infor: " + mTargetMetadataText);
+        // If not scanning, show button
+        // so that user can restart cloud scanning
+        if (!mIsScanning) {
+            if (GUI.Button(new Rect(100,400,200,50), "Restart Scanning")) {
+                // Reset Behaviour
+                mCloudRecoBehaviour.enabled = true;
+                mTargetMetadata = "";
+            }
+        }
     }
     
 

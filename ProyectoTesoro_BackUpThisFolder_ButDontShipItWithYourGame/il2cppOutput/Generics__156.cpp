@@ -31497,7 +31497,7 @@ IL2CPP_EXTERN_C  bool TrackableCollection_1_TryGetTrackable_m095167E8DACE9C72630
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 109667
+// Method Definition Index: 109668
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableManagerListener_1_OnEnable_m1C578BDA1F1E61087F9BC1C015D3D16838AD9A8D_gshared (TrackableManagerListener_1_tF5FD12C1482D0B415F386E1BC32077FEBAA40B8D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -31662,7 +31662,7 @@ IL_0158:
 		return;
 	}
 }
-// Method Definition Index: 109668
+// Method Definition Index: 109669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableManagerListener_1_OnDisable_mC3B0C7F2B22A04A54042A588B585345B880BDFF6_gshared (TrackableManagerListener_1_tF5FD12C1482D0B415F386E1BC32077FEBAA40B8D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -31694,7 +31694,7 @@ IL_001f:
 		return;
 	}
 }
-// Method Definition Index: 109671
+// Method Definition Index: 109672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableManagerListener_1__ctor_mA005DBA59FBCA1E0EC60AA2B1B1D93527527ABF2_gshared (TrackableManagerListener_1_tF5FD12C1482D0B415F386E1BC32077FEBAA40B8D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
