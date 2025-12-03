@@ -47,10 +47,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
 
 
-    string mTargetMetadata = "";
-    string mTargetMetadataText = "";
-
-
     void Start()
     {
         textoCanva.text = "Busca la primera pelicula para empezar la busqueda";
@@ -150,9 +146,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         modelPivot.localRotation = Quaternion.identity;
         modelPivot.localScale = Vector3.one;
 
-        mTargetMetadata = datos.nombre;
-        mTargetMetadataText = datos.adivinanza;
-
         if(!juegoIniciado && datos.esPrimera)
         {
             juegoIniciado = true;
@@ -243,18 +236,12 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
 
     void OnGUI() {
-        // Display current 'scanning' status
-        GUI.Box (new Rect(100,100,200,50), mIsScanning ? "Scanning" : "Not scanning");
-        // Display metadata of latest detected cloud-target
-        GUI.Box(new Rect(100, 200, 200, 50), "Metadata: " + mTargetMetadata);
-        GUI.Box (new Rect(100,300,200,50), "Infor: " + mTargetMetadataText);
-        // If not scanning, show button
         // so that user can restart cloud scanning
         if (!mIsScanning) {
             if (GUI.Button(new Rect(100,400,200,50), "Restart Scanning")) {
                 // Reset Behaviour
                 mCloudRecoBehaviour.enabled = true;
-                mTargetMetadata = "";
+                mCloudRecoBehaviour.ClearObservers();
             }
         }
     }
