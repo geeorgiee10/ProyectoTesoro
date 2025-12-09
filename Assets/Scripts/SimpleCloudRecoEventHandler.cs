@@ -136,7 +136,7 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
 
         //mCloudRecoBehaviour.enabled = false;
 
-         var newImageTarget = mCloudRecoBehaviour.EnableObservers(
+        var newImageTarget = mCloudRecoBehaviour.EnableObservers(
             cloudRecoSearchResult,
             ImageTargetTemplate.gameObject
         );
@@ -197,9 +197,9 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         textoCanva.text = "Adivinanza:\n\n" + datos.adivinanza;
 
 
-        /*mCloudRecoBehaviour.enabled = false;
-        yield return new WaitForSeconds(1f);
-        mCloudRecoBehaviour.enabled = true;*/
+        //mCloudRecoBehaviour.enabled = false;
+        //yield return new WaitForSeconds(1f);
+        mCloudRecoBehaviour.enabled = true;
     }
 
     IEnumerator FallarPrimera()
@@ -229,8 +229,6 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         textoCanva.text = "Intentalo de nuevo";
         yield return new WaitForSeconds(1f);
 
-        
-
         mCloudRecoBehaviour.enabled = true;
     }
 
@@ -240,8 +238,9 @@ public class SimpleCloudRecoEventHandler : MonoBehaviour
         if (!mIsScanning) {
             if (GUI.Button(new Rect(100,400,200,50), "Restart Scanning")) {
                 // Reset Behaviour
-                mCloudRecoBehaviour.enabled = true;
+                mCloudRecoBehaviour.enabled = false;
                 mCloudRecoBehaviour.ClearObservers();
+                mCloudRecoBehaviour.enabled = true;
             }
         }
     }

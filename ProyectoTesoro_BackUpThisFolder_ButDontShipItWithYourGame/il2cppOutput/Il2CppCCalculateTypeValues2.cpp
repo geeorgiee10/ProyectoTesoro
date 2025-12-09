@@ -4199,26 +4199,26 @@ struct U3CEnterCoroutineU3Ed__14_t7C9390ED9E22E1578151139E050F187DDCB3DE83  : pu
 	GraphStack_tD9049F5FB5F8D9E9CD80764D18067D0F87343E7C* ___U3CstackU3E5__2;
 	RuntimeObject* ___U3CU3E7__wrap2;
 };
-struct U3CAciertoU3Ed__21_tD1C243488A15273F84598260C367B0D3E1236DD6  : public RuntimeObject
+struct U3CAciertoU3Ed__19_tC847FE36ED820E006F17487E459A96F03D3CBC54  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* ___U3CU3E4__this;
 	MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683* ___datos;
 };
-struct U3CFallarPrimeraU3Ed__22_tC6F1FD64455222A89B165765CFFBDEF3A5828C12  : public RuntimeObject
+struct U3CFallarPrimeraU3Ed__20_t35B37EB65909E417EE76AC2A72E98FAAFF9B913D  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* ___U3CU3E4__this;
 };
-struct U3CFalloU3Ed__23_tC94BEB0CFD7875B120A6569D4655EAE812A50095  : public RuntimeObject
+struct U3CFalloU3Ed__21_t855006C6CF20B66470297354F39928A273BE3481  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D* ___U3CU3E4__this;
 };
-struct U3CGetAssetBundleU3Ed__19_t108F748B24602A874B7B721BAAE9120F6C24B915  : public RuntimeObject
+struct U3CGetAssetBundleU3Ed__17_t0B9683C2285AA88713F5EF8824342294F7124A2C  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -31320,8 +31320,6 @@ struct SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D  : 
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___modelPivot;
 	ImageTargetBehaviour_t014481FC6A8B819C2BCE7922BA6BD53E1B23F120* ___ImageTargetTemplate;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___modeloActual;
-	String_t* ___mTargetMetadata;
-	String_t* ___mTargetMetadataText;
 };
 struct Start_t54D87976C36D6E43E61FD811D9EECA17A60CC35A  : public MachineEventUnit_1_tFEE27A934FA6DC5A5AD38ECCF06892F801EDC8C2
 {
@@ -42131,13 +42129,13 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize14117 = { sizeof(U3CModuleU3
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14118;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize14118 = { sizeof(MetaDatos_t49C9148E9C434B9AFBF04AB96337DDB13145F683), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14119;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize14119 = { sizeof(U3CAciertoU3Ed__21_tD1C243488A15273F84598260C367B0D3E1236DD6), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize14119 = { sizeof(U3CAciertoU3Ed__19_tC847FE36ED820E006F17487E459A96F03D3CBC54), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14120;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize14120 = { sizeof(U3CFallarPrimeraU3Ed__22_tC6F1FD64455222A89B165765CFFBDEF3A5828C12), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize14120 = { sizeof(U3CFallarPrimeraU3Ed__20_t35B37EB65909E417EE76AC2A72E98FAAFF9B913D), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14121;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize14121 = { sizeof(U3CFalloU3Ed__23_tC94BEB0CFD7875B120A6569D4655EAE812A50095), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize14121 = { sizeof(U3CFalloU3Ed__21_t855006C6CF20B66470297354F39928A273BE3481), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14122;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize14122 = { sizeof(U3CGetAssetBundleU3Ed__19_t108F748B24602A874B7B721BAAE9120F6C24B915), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize14122 = { sizeof(U3CGetAssetBundleU3Ed__17_t0B9683C2285AA88713F5EF8824342294F7124A2C), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14123;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize14123 = { sizeof(SimpleCloudRecoEventHandler_t8CB31C2AAE2DD9FD145B29A562ED88FFB6B9480D), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize14124;
